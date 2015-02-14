@@ -2,6 +2,7 @@
 wp-admin/
 wp-includes/
 wp-content/plugins/hello.php
+wp-content/themes/index.php
 wp-content/themes/twentythirteen
 wp-content/themes/twentyfourteen
 wp-content/themes/twentyfifteen
