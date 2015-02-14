@@ -8,6 +8,7 @@ wp-content/themes/index.php
 wp-content/themes/twentythirteen
 wp-content/themes/twentyfourteen
 wp-content/themes/twentyfifteen
+wp-content/uploads
 index.php
 wp-activate.php
 wp-blog-header.php
@@ -24,3 +25,16 @@ wp-signup.php
 wp-trackback.php
 xmlrpc.php
 .htaccess
+
+### Susy ###
+wp-content/themes/julialandaier/sass/vendor/susy/susy-*.gem
+wp-content/themes/julialandaier/sass/vendor/susy/*~
+wp-content/themes/julialandaier/sass/vendor/susy/*.DS_Store
+wp-content/themes/julialandaier/sass/vendor/susy/.sass-cache
+wp-content/themes/julialandaier/sass/vendor/susy/.rvmrc
+wp-content/themes/julialandaier/sass/vendor/susy/pkg/
+wp-content/themes/julialandaier/sass/vendor/susy/*.sublime-*
+wp-content/themes/julialandaier/sass/vendor/susy/docs/_build/
+wp-content/themes/julialandaier/sass/vendor/susy/bower_components/
+wp-content/themes/julialandaier/sass/vendor/susy/Gemfile.lock
+wp-content/themes/julialandaier/sass/vendor/susy/*.css.map
