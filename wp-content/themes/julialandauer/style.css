@@ -45,7 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 1.0 Normalize
 --------------------------------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Quattrocento+Sans:400,700);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -702,8 +702,45 @@ Subtitle
 ----------------------------------------------------------------*/
 p,
 a {
-  font-family: "Quattrocento", Helvetica, sans-serif;
+  font-family: "Quattrocento Sans", Helvetica, sans-serif;
   font-size: 1.1em; }
+
+/*--------------------------------------------------------------
+>>> TYPOGRAPHY
+----------------------------------------------------------------*/
+h1, h2, h3, h4, h5 {
+  font-family: "Quattrocento Sans", Helvetica, sans-serif; }
+
+p {
+  width: 25%;
+  float: left;
+  margin-right: 5.26316%; }
+
+.schedule {
+  width: 50%;
+  float: left;
+  margin-right: 5.26316%;
+  content: "";
+  display: table; }
+
+.hero-image {
+  max-height: 500px; }
+
+.special-image {
+  background-color: #0060bc;
+  opacity: .5; }
+
+image-overlay {
+  width: 400px;
+  height: 250px;
+  background: #1e90ff;
+  -webkit-clip-path: polygon(100% 75%, 100% 100%, 0% 100%);
+  clip-path: polygon(100% 75%, 100% 100%, 0% 100%); }
+  image-overlay:hover {
+    background: #1e90ff;
+    -webkit-clip-path: polygon(100% 80%, 100% 100%, 0% 100%);
+    clip-path: polygon(100% 80%, 100% 100%, 0% 100%);
+    transition: ease-in-out .4s; }
 
 .site-content {
   max-width: 100%;

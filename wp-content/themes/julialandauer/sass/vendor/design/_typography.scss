@@ -2,14 +2,15 @@
 >>> TYPOGRAPHY
 ----------------------------------------------------------------*/
 
-@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Quattrocento+Sans:400,700);
 
-$quattrocento:		'Quattrocento' , Helvetica, sans-serif;
-$headlines:			2em;
-$body-copy:			1.1em;
+$primary-font:	 'Quattrocento Sans' , Helvetica, sans-serif;
+$secondary-font: 'Roboto Slab' , Georgia, serif;
+$headlines:		  2em;
+$body-copy:		  1.1em;
 
 p,
 a {
-	font-family: $quattrocento;
+	font-family: $primary-font;
 	font-size: $body-copy;
 }

@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+>>> TYPOGRAPHY
+----------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5 {
+	font-family: $primary-font;
+}
+
+p {
+	@include span(25%);
+}
+
+button {
+
+}
+
+.schedule {
+	@include span(50%);
+	@include clearfix;
+}
+
+.hero-image {
+	max-height: 500px;
+}
+
+.special-image {
+	background-color: $racing-blue;
+	opacity: .5;
+}
+
+image-overlay {
+	width: 400px;
+	height: 250px;
+	background: #1e90ff;
+	-webkit-clip-path: polygon(100% 75%, 100% 100%, 0% 100%);
+	clip-path: polygon(100% 75%, 100% 100%, 0% 100%);
+
+	&:hover {
+		background: #1e90ff;
+		-webkit-clip-path: polygon(100% 80%, 100% 100%, 0% 100%);
+		clip-path: polygon(100% 80%, 100% 100%, 0% 100%);
+		transition: ease-in-out .4s;
+	}
+}
