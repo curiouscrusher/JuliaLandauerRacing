@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700);
+.button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+  cursor: pointer;
+  padding: 1em 2.5em;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+  .button-primary:hover, .button-primary:active {
+    color: #0e83cd;
+    background: #fff; }
+
+.button-secondary {
+  overflow: hidden; }
+  .button-secondary:after {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg); }
+  .button-secondary:hover, .button-secondary:active {
+    color: #0e83cd; }
+  .button-secondary:hover:after {
+    height: 260%;
+    opacity: 1; }
+  .button-secondary:active:after {
+    height: 400%;
+    opacity: 1; }
+
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0060bc;
+  font-family: 'Quattrocento Sans';
+  margin-left: 3em; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+* {
+  clear: both;
+  float: left;
+  padding: 0;
+  margin: 1em 0; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2.5em; }
+
+h4 {
+  font-size: 2em; }
+
+h5 {
+  font-size: 1.5em; }
+
+p {
+  width: 35%;
+  float: left;
+  margin-right: 5.26316%;
+  clear: both;
+  font-size: 1em;
+  line-height: 1.5em; }
+
+input {
+  color: #444;
+  font-size: 16px;
+  height: 40px;
+  outline: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  border-left: 4px solid #ddd;
+  background-color: #eee;
+  padding: 0 20px; }
+  input:focus {
+    border-left: 4px solid #0060bc; }
+
+/*# sourceMappingURL=style.css.map */

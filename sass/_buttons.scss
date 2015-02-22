@@ -1,0 +1,67 @@
+.button {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	border: 3px solid #fff;
+	color: #fff;
+	background: none;
+	cursor: pointer;
+	padding: 1em 2.5em;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+	&:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	&-primary:hover,
+	&-primary:active {
+		color: #0e83cd;
+		background: #fff;
+	}
+}
+
+.button-secondary {
+	overflow: hidden;
+
+	&:after {
+		width: 100%;
+		height: 0;
+		top: 50%;
+		left: 50%;
+		background: #fff;
+		opacity: 0;
+		-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+		-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+		-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+		transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	}
+
+	&:hover,
+	&:active {
+		color: #0e83cd;
+	}
+
+	&:hover:after {
+		height: 260%;
+		opacity: 1;
+	}
+
+	&:active:after {
+		height: 400%;
+		opacity: 1;
+	}
+}
