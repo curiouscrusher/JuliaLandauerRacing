@@ -38,3 +38,7 @@ wp-content/themes/julialandaier/sass/vendor/susy/docs/_build/
 wp-content/themes/julialandaier/sass/vendor/susy/bower_components/
 wp-content/themes/julialandaier/sass/vendor/susy/Gemfile.lock
 wp-content/themes/julialandaier/sass/vendor/susy/*.css.map
+
+### CSS ###
+*.css.map
+css/
