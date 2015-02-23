@@ -50,18 +50,19 @@
 		transform: translateX(-50%) translateY(-50%) rotate(45deg);
 	}
 
-	&:hover,
+	&:hover {
+		color: #0e83cd;
+		&:after {
+			height: 260%;
+			opacity: 1;
+		}
+	}
+
 	&:active {
 		color: #0e83cd;
-	}
-
-	&:hover:after {
-		height: 260%;
-		opacity: 1;
-	}
-
-	&:active:after {
-		height: 400%;
-		opacity: 1;
+		&:after {
+			height: 400%;
+			opacity: 1;
+		}
 	}
 }
