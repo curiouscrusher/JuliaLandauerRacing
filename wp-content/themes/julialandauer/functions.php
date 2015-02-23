@@ -97,6 +97,29 @@ function julialandauer_widgets_init() {
 add_action( 'widgets_init', 'julialandauer_widgets_init' );
 
 /**
+ * Register custom post type(s).
+ */
+function create_posttype() {
+    register_post_type( 'schedule',
+        array(
+            'labels' 				=> array(
+                'name' 				=> __( 'Schedule' )
+            ),
+            'public' 				=> true,
+            'has_archive' 			=> false,
+            'exclude_from_search' 	=> true,
+            'menu_icon' 			=> get_template_directory_uri() . '"/images/custom-post-schedule-icon.png"',
+            'description'			=> "Use this post to update the upcoming schedule calendar.",
+        )
+    );
+}
+/**
+* Hooking up our function to theme setup
+*/
+add_action( 'init', 'create_posttype' );
+
+
+/**
  * Enqueue scripts and styles.
  */
 function julialandauer_scripts() {
