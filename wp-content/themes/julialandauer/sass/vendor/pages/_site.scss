@@ -1,3 +1,35 @@
 .site-content {
 	@include container;
 }
+
+.site-branding {
+	margin-top: 2em;
+}
+
+$susy: (
+  columns: 12,  
+  gutters: 1/4, 
+);
+
+.main-navigation {
+	float: left;
+	width: span(8);
+	margin-left: span(1);
+	margin-top: 2em;
+
+	li {
+		padding-right: 3em;
+
+		> a {
+			color: $racing-blue;
+
+			&:visited {
+				color: $racing-blue;
+			}
+
+			&:hover {
+				color: darken($racing-blue, 10%);
+			}
+		}
+	}
+}

@@ -20,23 +20,34 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="about-page__history">
+						<div class="about-page__history--left">
 						<p>
 							<!-- Load the about/history text -->
-							<?php  echo get_post_meta($post->ID, 'history', true); ?>
+							<?php  echo get_post_meta($post->ID, 'history_left', true); ?>
 						</p>
+						</div>
+						<div class="about-page__history--right">
+						<p>
+							<!-- Load the about/history text -->
+							<?php  echo get_post_meta($post->ID, 'history_right', true); ?>
+						</p>
+						</div>
 					</div>
 
-					<!-- Load The Schedule -->
-					<?php
-					  $page_id = 60;
-					  $page_data = get_page( $page_id );
+					<div class="about-page__schedule">
 
-					  echo $page_data->post_title;
-					  echo $page_data->post_content;
-					?>
+						<!-- Load The Schedule -->
+						<?php
+						  $page_id = 60;
+						  $page_data = get_page( $page_id );
+
+						  echo $page_data->post_title;
+						  echo $page_data->post_content;
+						?>
+					</div>
 
 					<div class="about-page__stats">
-						<img src="http://placehold.it/800x400">
+						<img src="http://placehold.it/1200x400">
 					</div>
 
 					
