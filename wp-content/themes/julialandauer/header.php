@@ -40,9 +40,3 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-<picture>
-	
-	<source srcset="<?php echo $this->getSkinUrl() ?>images/hp-hero-images/easter-2015/hp_primary_image_easter_285x315.jpg" media="(min-width: 320px">
-
-
-</picture>

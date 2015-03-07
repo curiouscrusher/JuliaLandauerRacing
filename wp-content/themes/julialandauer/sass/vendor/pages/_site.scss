@@ -1,3 +1,35 @@
 .site-content {
 	@include container;
 }
+
+.site-branding {
+	margin-top: 2em;
+}
+
+$susy: (
+  columns: 12,  // The number of columns in your grid
+  gutters: 1/4, // The size of a gutter in relation to a single column
+);
+
+.main-navigation {
+	float: left;
+	width: span(8);
+	margin-left: span(1);
+	margin-top: 2em;
+
+	li {
+		padding-right: 3em;
+
+		> a {
+			color: $racing-blue;
+
+			&:visited {
+				color: $racing-blue;
+			}
+
+			&:hover {
+				color: darken($racing-blue, 10%);
+			}
+		}
+	}
+}

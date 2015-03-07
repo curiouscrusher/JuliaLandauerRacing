@@ -751,4 +751,21 @@ image-overlay {
     display: block;
     clear: both; }
 
+.site-branding {
+  margin-top: 2em; }
+
+.main-navigation {
+  float: left;
+  width: 66.10169%;
+  margin-left: 6.77966%;
+  margin-top: 2em; }
+  .main-navigation li {
+    padding-right: 3em; }
+    .main-navigation li > a {
+      color: #0060bc; }
+      .main-navigation li > a:visited {
+        color: #0060bc; }
+      .main-navigation li > a:hover {
+        color: #004689; }
+
 /*# sourceMappingURL=style.css.map */
