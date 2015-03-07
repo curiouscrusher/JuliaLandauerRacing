@@ -755,13 +755,29 @@ image-overlay {
 .site-footer {
   background-color: #737373;
   float: left;
-  min-height: 150px !important;
+  text-align: center;
   width: 100%; }
-  .site-footer__credits {
-    color: #fff;
-    text-align: center; }
-    .site-footer__credits a {
-      color: #fff; }
+  .site-footer__copyright, .site-footer__credits {
+    clear: both;
+    color: #fff; }
+  .site-footer__social {
+    margin-right: 5.26316%;
+    margin-left: 23.72881%;
+    max-height: 35px;
+    margin-top: 2em;
+    width: 49.15254%; }
+    .site-footer__social ul {
+      display: inline-block; }
+    .site-footer__social li {
+      height: auto;
+      float: left;
+      list-style: none;
+      padding-right: 1em; }
+      .site-footer__social li > img {
+        height: auto;
+        width: 2rem; }
+  .site-footer__credits a {
+    color: #fff; }
 
 .site-content {
   max-width: 100%;

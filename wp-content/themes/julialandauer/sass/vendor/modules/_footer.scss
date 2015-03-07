@@ -5,12 +5,40 @@
 .site-footer {
 	background-color: $track-gray;
 	float: left;
-	min-height: 150px !important;
+	text-align: center;
 	width: 100%;
 
-	&__credits {
+	&__copyright {
+		@include break;
 		color: #fff;
-		text-align: center;
+	}
+
+	&__social {
+		@include gutters;
+		margin-left: span(3 of 12);
+		max-height: 35px;
+		margin-top: 2em;
+		width: span(6 of 12);
+
+		& ul {
+			display: inline-block;
+		}
+
+		& li {
+			height: auto;
+			float: left;
+			list-style: none;
+			padding-right: 1em;
+
+			> img {
+				height: auto;
+				width: 2rem;
+			}
+		}
+	}
+
+	&__credits {
+		@extend .site-footer__copyright;
 
 		& a {
 			color: #fff;
