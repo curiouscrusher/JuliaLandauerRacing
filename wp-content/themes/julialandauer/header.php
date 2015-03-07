@@ -23,7 +23,14 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://julialandauer.dev/wp-content/themes/julialandauer/images/logo.svg" alt=""></a></h1>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<picture>
+				<source srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-1600.svg" media="(min-width: 1600px)">
+				<source srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-768.svg" media="(min-width: 768px)">
+				<source srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-400.svg" >
+					<img srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-400.svg" src="<?php echo get_template_directory_uri(); ?>/images/logo/logo-1600.svg" alt="">
+			</picture>
+			</a>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -33,3 +40,9 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+<picture>
+	
+	<source srcset="<?php echo $this->getSkinUrl() ?>images/hp-hero-images/easter-2015/hp_primary_image_easter_285x315.jpg" media="(min-width: 320px">
+
+
+</picture>
