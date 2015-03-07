@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+>>> Header
+--------------------------------------------------------------*/
+
+.main-navigation {
+	float: left;
+	width: span(8);
+	margin-left: span(1);
+	margin-top: 2em;
+
+	li {
+		padding-right: 3em;
+
+		> a {
+			color: $racing-blue;
+
+			&:visited {
+				color: $racing-blue;
+			}
+
+			&:hover {
+				color: darken($racing-blue, 10%);
+			}
+		}
+	}
+}

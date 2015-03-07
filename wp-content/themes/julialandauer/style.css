@@ -2,7 +2,7 @@
 Theme Name: julialandauer
 Theme URI: http://underscores.me/
 Author: Automattic
-Author URI: http://automattic.com/
+Author URI: http://nathanielholland.com/
 Description: Hi. I'm a starter theme called <code>julialandauer</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -403,17 +403,6 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
@@ -711,10 +700,11 @@ a {
 h1, h2, h3, h4, h5 {
   font-family: "Quattrocento Sans", Helvetica, sans-serif; }
 
-p {
-  width: 25%;
-  float: left;
-  margin-right: 5.26316%; }
+a {
+  color: #0060bc;
+  text-decoration: none; }
+  a:visited {
+    color: #0060bc; }
 
 .schedule {
   width: 50%;
@@ -742,6 +732,37 @@ image-overlay {
     clip-path: polygon(100% 80%, 100% 100%, 0% 100%);
     transition: ease-in-out .4s; }
 
+/*--------------------------------------------------------------
+>>> Header
+--------------------------------------------------------------*/
+.main-navigation {
+  float: left;
+  width: 205.26316%;
+  margin-left: 21.05263%;
+  margin-top: 2em; }
+  .main-navigation li {
+    padding-right: 3em; }
+    .main-navigation li > a {
+      color: #0060bc; }
+      .main-navigation li > a:visited {
+        color: #0060bc; }
+      .main-navigation li > a:hover {
+        color: #004689; }
+
+/*--------------------------------------------------------------
+>>> Footer
+--------------------------------------------------------------*/
+.site-footer {
+  background-color: #737373;
+  float: left;
+  min-height: 150px !important;
+  width: 100%; }
+  .site-footer__credits {
+    color: #fff;
+    text-align: center; }
+    .site-footer__credits a {
+      color: #fff; }
+
 .site-content {
   max-width: 100%;
   margin-left: auto;
@@ -753,20 +774,6 @@ image-overlay {
 
 .site-branding {
   margin-top: 2em; }
-
-.main-navigation {
-  float: left;
-  width: 66.10169%;
-  margin-left: 6.77966%;
-  margin-top: 2em; }
-  .main-navigation li {
-    padding-right: 3em; }
-    .main-navigation li > a {
-      color: #0060bc; }
-      .main-navigation li > a:visited {
-        color: #0060bc; }
-      .main-navigation li > a:hover {
-        color: #004689; }
 
 /*--------------------------------------------------------------
 >>> About Page

@@ -6,12 +6,16 @@ h1, h2, h3, h4, h5 {
 	font-family: $primary-font;
 }
 
-p {
-	@include span(25%);
-}
 
 button {
 
+}
+
+a {
+	color: $racing-blue;
+	text-decoration: none;
+
+	&:visited {color: $racing-blue;}
 }
 
 .schedule {
