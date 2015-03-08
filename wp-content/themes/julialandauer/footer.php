@@ -10,10 +10,6 @@
 
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-footer__copyright">
-			<p>© 2014. Julia Landauer Racing LLC. All Rights Reserved.</p>
-		</div>
-
 		<div class="site-footer__social">
 			<ul>
 				<li><img src="<?php echo get_template_directory_uri(); ?>/images/social/facebook.svg" alt="facebook"></li>
@@ -24,7 +20,10 @@
 				<li><img src="<?php echo get_template_directory_uri(); ?>/images/social/linkedin.svg" alt="linkedin"></li>
 			</ul>
 		</div>
-
+		<hr class="site-footer__divider" />
+		<div class="site-footer__copyright">
+			<p>© 2014. Julia Landauer Racing LLC. All Rights Reserved.</p>
+		</div>
 		<div class="site-footer__credits">
 			<p>Design and Development by <a href="http://nathanielholland.com">Nate Holland</a></p>
 		</div><!-- .site-footer -->

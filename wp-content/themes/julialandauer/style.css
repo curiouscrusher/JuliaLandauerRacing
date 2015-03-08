@@ -757,17 +757,15 @@ image-overlay {
   float: left;
   text-align: center;
   width: 100%; }
-  .site-footer__copyright, .site-footer__credits {
-    clear: both;
-    color: #fff; }
   .site-footer__social {
     margin-right: 5.26316%;
-    margin-left: 23.72881%;
-    max-height: 35px;
+    margin-bottom: 2em;
     margin-top: 2em;
-    width: 49.15254%; }
+    max-height: 35px;
+    width: 100%; }
     .site-footer__social ul {
-      display: inline-block; }
+      display: inline-block;
+      margin: 0; }
     .site-footer__social li {
       height: auto;
       float: left;
@@ -776,8 +774,18 @@ image-overlay {
       .site-footer__social li > img {
         height: auto;
         width: 2rem; }
-  .site-footer__credits a {
+  .site-footer__divider {
+    margin-left: 6.77966%;
+    width: 83.05085%; }
+  .site-footer__copyright, .site-footer__credits {
+    clear: both;
     color: #fff; }
+    .site-footer__copyright p, .site-footer__credits p {
+      margin: 0; }
+  .site-footer__credits {
+    margin-bottom: 2em; }
+    .site-footer__credits a {
+      color: #fff; }
 
 .site-content {
   max-width: 100%;
