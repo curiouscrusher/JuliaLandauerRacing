@@ -11,9 +11,18 @@
 		margin-right: span(1);
 		width: 100%;
 
+		@media (max-width: 60em) {
+				margin: 0 1em 2em;
+			}
+
 		&--left, &--right {
 			float: left;
 			width: span(4 of 10);
+
+			@media (max-width: 60em) {
+				float: left;
+				width: 95%;
+			}
 
 			> p {
 				height: auto;
