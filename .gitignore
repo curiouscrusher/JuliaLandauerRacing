@@ -40,5 +40,5 @@ wp-content/themes/julialandaier/sass/vendor/susy/Gemfile.lock
 wp-content/themes/julialandaier/sass/vendor/susy/*.css.map
 
 ### CSS ###
-*.css.map
-css/
+wp-content/themes/julialandaier/css/*.css.map
+wp-content/themes/julialandaier/css/
