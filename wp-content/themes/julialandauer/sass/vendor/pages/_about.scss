@@ -9,24 +9,30 @@
 		margin-bottom: 4em;
 		margin-left: span(1);
 		margin-right: span(1);
-		width: 100%;
+		overflow: hidden;
+		padding: 3em;
+		//width: 100%;
 
 		@media (max-width: 60em) {
-				margin: 0 1em 2em;
+				//margin: 0 1em 2em;
+			}
+
+			&--title {
+				margin: 0;
 			}
 
 		&--left, &--right {
 			float: left;
-			width: span(4 of 10);
+			width: span(40%);
 
 			@media (max-width: 60em) {
-				float: left;
-				width: 95%;
+				//float: left;
+				width: span(100%);
 			}
 
 			> p {
 				height: auto;
-				width: 100%;
+				width: span(100%);
 			}
 		}
 
@@ -37,6 +43,12 @@
 		&--right {
 			clear: right;
 		}
+	}
+
+	&__hero-photo {
+		max-height: 500px;
+		overflow: hidden;
+		width: span(100%);
 	}
 
 	&__schedule {
