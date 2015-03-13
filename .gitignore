@@ -27,18 +27,18 @@ xmlrpc.php
 .htaccess
 
 ### Susy ###
-wp-content/themes/julialandaier/sass/vendor/susy/susy-*.gem
-wp-content/themes/julialandaier/sass/vendor/susy/*~
-wp-content/themes/julialandaier/sass/vendor/susy/*.DS_Store
-wp-content/themes/julialandaier/sass/vendor/susy/.sass-cache
-wp-content/themes/julialandaier/sass/vendor/susy/.rvmrc
-wp-content/themes/julialandaier/sass/vendor/susy/pkg/
-wp-content/themes/julialandaier/sass/vendor/susy/*.sublime-*
-wp-content/themes/julialandaier/sass/vendor/susy/docs/_build/
-wp-content/themes/julialandaier/sass/vendor/susy/bower_components/
-wp-content/themes/julialandaier/sass/vendor/susy/Gemfile.lock
-wp-content/themes/julialandaier/sass/vendor/susy/*.css.map
+wp-content/themes/julialandauer/sass/vendor/susy/susy-*.gem
+wp-content/themes/julialandauer/sass/vendor/susy/*~
+wp-content/themes/julialandauer/sass/vendor/susy/*.DS_Store
+wp-content/themes/julialandauer/sass/vendor/susy/.sass-cache
+wp-content/themes/julialandauer/sass/vendor/susy/.rvmrc
+wp-content/themes/julialandauer/sass/vendor/susy/pkg/
+wp-content/themes/julialandauer/sass/vendor/susy/*.sublime-*
+wp-content/themes/julialandauer/sass/vendor/susy/docs/_build/
+wp-content/themes/julialandauer/sass/vendor/susy/bower_components/
+wp-content/themes/julialandauer/sass/vendor/susy/Gemfile.lock
+wp-content/themes/julialandauer/sass/vendor/susy/*.css.map
 
 ### CSS ###
-wp-content/themes/julialandaier/*.css.map
-wp-content/themes/julialandaier/style.css
+wp-content/themes/julialandauer/*.css.map
+wp-content/themes/julialandauer/style.css
