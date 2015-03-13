@@ -742,6 +742,9 @@ image-overlay {
     clip-path: polygon(100% 80%, 100% 100%, 0% 100%);
     transition: ease-in-out .4s; }
 
+#page {
+  overflow: hidden; }
+
 .site-content {
   max-width: 100%;
   margin-left: auto;
@@ -776,17 +779,16 @@ image-overlay {
   margin-bottom: 4em;
   margin-left: 7.47664%;
   margin-right: 7.47664%;
-  width: 100%; }
-  @media (max-width: 60em) {
-    .about-page__history, .about-page__schedule, .about-page__stats {
-      margin: 0 1em 2em; } }
+  overflow: hidden;
+  padding: 3em; }
+  .about-page__history--title {
+    margin: 0; }
   .about-page__history--left, .about-page__history--right {
     float: left;
-    width: 39.32584%; }
+    width: 40%; }
     @media (max-width: 60em) {
       .about-page__history--left, .about-page__history--right {
-        float: left;
-        width: 95%; } }
+        width: 100%; } }
     .about-page__history--left > p, .about-page__history--right > p {
       height: auto;
       width: 100%; }
@@ -794,6 +796,10 @@ image-overlay {
     margin-right: 7.47664%; }
   .about-page__history--right {
     clear: right; }
+.about-page__hero-photo {
+  max-height: 500px;
+  overflow: hidden;
+  width: 100%; }
 .about-page__schedule {
   margin-top: 4em; }
 
