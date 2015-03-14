@@ -1,0 +1,111 @@
+/*--------------------------------------------------------------
+>>> Partners Page
+--------------------------------------------------------------*/
+
+.partners-page {
+
+	&__reasons {
+		clear: both;
+		margin-bottom: 4em;
+		margin-left: span(1);
+		margin-right: span(1);
+		overflow: hidden;
+		padding: 0 3em 3em 3em;
+		//width: 100%;
+
+		@media (max-width: 60em) {
+				margin: 0;
+				padding: 0 1.5em 1.5em 1.5em;
+			}
+
+			&--title {
+				text-align: center;
+			}
+
+		&--meaning, &--why {
+			float: left;
+			width: span(45%);
+
+			@media (max-width: 60em) {
+				//float: left;
+				width: span(100%);
+			}
+
+			> p {
+				height: auto;
+				width: span(100%);
+			}
+		}
+
+		&--meaning {
+			margin-right: span(1);
+		}
+
+		&--why {
+			clear: right;
+		}
+	}
+
+	&__sponsor-grid {
+		@extend .partners-page__reasons;
+
+		&--logo {
+			float: left;
+			margin-bottom: 2em;
+			width: span(33%);
+
+			@media (max-width: 60em) {
+				width: span(50%);
+				margin-bottom: 1.5em;
+			}
+		}
+	}
+
+	&__partner-photos {
+		overflow: hidden;
+
+		&--title {
+			@extend .partners-page__reasons--title;
+		}
+	}
+
+	&__actions {
+		@extend .partners-page__reasons;
+
+		&--title {
+				text-align: center;
+		}
+
+		&--content, &--partner-with-julia {
+			float: left;
+			width: span(45%);
+
+			@media (max-width: 60em) {
+				//float: left;
+				width: span(100%);
+			}
+
+			> p {
+				height: auto;
+				width: span(100%);
+			}
+		}
+
+		&--content {
+			margin-right: span(1);
+		}
+
+		&--partner-with-julia {
+			clear: right;
+
+			button {
+				@include center-block;
+				@include primary-cta-btn;
+			}
+
+			> p {
+				//font-size: 1.5em;
+			}
+		}
+	}
+}
