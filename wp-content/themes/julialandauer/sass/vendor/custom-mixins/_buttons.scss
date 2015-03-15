@@ -4,14 +4,12 @@
 
 // Primary CTA Button
 @mixin primary-cta-btn ($text-color: $racing-blue, $btn-border: $racing-blue, $background-color: transparent, $hover-color: $racing-blue) {
-    //position: relative;
     overflow: hidden;
     width: 7rem;
     color: $text-color;
     border: 2px solid $btn-border;
     background-color: $background-color;
     line-height: 2;
-    //margin: 0;
     padding: 0;
     border-radius: 1.5rem;
     font-size: 1.125rem;
