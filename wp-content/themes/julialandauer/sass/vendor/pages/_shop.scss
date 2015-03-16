@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+>>> Shop Page
+--------------------------------------------------------------*/
+
+.shop-page {
+	&__wrapper {
+		padding: 0 3em;
+
+		// Media Queries
+		@media (max-width: 60em) {
+				padding: 0 1.5em;
+			}
+	}
+
+	&__hero-card {
+		@include product-right;
+
+		button {
+			@include primary-cta-btn;
+			@include center-block;
+			margin-top: 2em;
+		}
+	}
+
+	&__water-bottle {
+		@include product-left;
+
+		button {
+			@include primary-cta-btn;
+			@include paypal-btn;
+			@include center-block;
+			margin-top: 2em;
+		}
+	}
+
+	&__hat {
+		@include product-right;
+
+		button {
+			@include primary-cta-btn;
+			@include paypal-btn;
+			@include center-block;
+			margin-top: 2em;
+		}
+	}
+
+	&__shirt {
+		@include product-left;
+
+		button {
+			@include primary-cta-btn;
+			@include paypal-btn;
+			@include center-block;
+			margin-top: 2em;
+		}
+	}
+}

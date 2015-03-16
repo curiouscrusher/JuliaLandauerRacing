@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+>>> Custom Mixin For Shop Page Product Layout
+--------------------------------------------------------------*/
+
+@mixin product-right () {
+	overflow: hidden;
+	margin-bottom: 6em;
+	width: span(100%);
+
+	&--image {
+		float: right;
+		margin-right: span(2);
+		width: span(30%);
+
+		// Media Queries
+		@media (max-width: 60em) {
+			float: none;
+			margin: 0;
+			width: span(100%);
+		}
+		
+	}
+
+	&--description {
+		float: left;
+		margin-left: span(2);
+		width: span(30%);
+
+		// Media Queries
+		@media (max-width: 60em) {
+			float: none;
+			margin: 0;
+			width: span(100%);
+
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+}
+
+@mixin product-left () {
+	overflow: hidden;
+	margin-bottom: 6em;
+	width: span(100%);
+
+	&--image {
+		float: left;
+		margin-left: span(2);
+		width: span(30%);
+
+		// Media Queries
+		@media (max-width: 60em) {
+			float: none;
+			margin: 0;
+			width: span(100%);
+		}
+	}
+
+	&--description {
+		float: right;
+		margin-right: span(2);
+		width: span(30%);
+
+		// Media Queries
+		@media (max-width: 60em) {
+			float: none;
+			margin: 0;
+			width: span(100%);
+
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+}
