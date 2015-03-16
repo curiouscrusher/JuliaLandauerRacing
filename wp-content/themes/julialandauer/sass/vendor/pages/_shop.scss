@@ -12,9 +12,7 @@
 			}
 	}
 
-	&__hero-card {}
-
-	&__water-bottle {
+	&__hero-card {
 		@include product-right;
 
 		button {
@@ -24,21 +22,34 @@
 		}
 	}
 
-	&__hat {
+	&__water-bottle {
 		@include product-left;
 
 		button {
 			@include primary-cta-btn;
+			@include paypal-btn;
+			@include center-block;
+			margin-top: 2em;
+		}
+	}
+
+	&__hat {
+		@include product-right;
+
+		button {
+			@include primary-cta-btn;
+			@include paypal-btn;
 			@include center-block;
 			margin-top: 2em;
 		}
 	}
 
 	&__shirt {
-		
+		@include product-left;
 
 		button {
 			@include primary-cta-btn;
+			@include paypal-btn;
 			@include center-block;
 			margin-top: 2em;
 		}
