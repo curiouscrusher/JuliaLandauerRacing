@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+>>> Contact Page
+--------------------------------------------------------------*/
+
+.contact-page {
+
+	&__wrapper {
+		clear: both;
+		margin-bottom: 4em;
+		margin-left: span(1);
+		margin-right: span(1);
+		overflow: hidden;
+		padding: 0 3em 3em 3em;
+
+		&--contact-section,
+		&--info-section {
+			float: left;
+			width: span(45%);
+		}
+
+		&--contact-section {
+			margin-right: span(1);
+		}
+	}
+
+}
