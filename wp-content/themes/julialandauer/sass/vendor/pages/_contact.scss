@@ -12,15 +12,31 @@
 		overflow: hidden;
 		padding: 0 3em 3em 3em;
 
-		&--contact-section,
+		&--contact-section {
+			float: left;
+			margin-left: span(1);
+			margin-right: span(1);
+			width: span(45%);
+
+			.wpcf7-submit {
+				@include primary-cta-btn;
+			}
+		}
+
 		&--info-section {
 			float: left;
-			width: span(45%);
-		}
+			width: span(35%);
 
-		&--contact-section {
-			margin-right: span(1);
+			.mailchimp {
+
+				&-signup {
+					@include form-box;
+				}
+
+				&--submit {
+					@include primary-cta-btn;
+				}
+			}
 		}
 	}
-
 }
