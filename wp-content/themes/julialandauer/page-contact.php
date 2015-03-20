@@ -48,7 +48,7 @@ get_header(); ?>
 									</p>
 
 									<!-- Begin MailChimp Signup Form -->
-									<div id="mc_embed_signup">
+									<div id="mc_embed_signup" class="mailchimp-signup">
 										<form action="//julialandauer.us9.list-manage.com/subscribe/post?u=1ec5ea0db145448aa433052d1&amp;id=9fb1ba425c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 											<div id="mc_embed_signup_scroll">
 
@@ -68,7 +68,7 @@ get_header(); ?>
 													<input type="text" name="b_1ec5ea0db145448aa433052d1_9fb1ba425c" tabindex="-1" value="">
 												</div>
 												<div class="clear">
-													<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-large">
+													<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="mailchimp-submit">
 												</div>
 											</div>
 
