@@ -49,6 +49,7 @@ get_header(); ?>
 
 									<!-- Begin MailChimp Signup Form -->
 									<div id="mc_embed_signup" class="mailchimp-signup">
+									<h2>Signup For Fan Mail!</h2>
 										<form action="//julialandauer.us9.list-manage.com/subscribe/post?u=1ec5ea0db145448aa433052d1&amp;id=9fb1ba425c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 											<div id="mc_embed_signup_scroll">
 
