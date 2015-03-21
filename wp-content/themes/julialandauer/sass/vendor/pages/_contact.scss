@@ -12,14 +12,36 @@
 		overflow: hidden;
 		padding: 0 3em 3em 3em;
 
+		@media (max-width: 60em) {
+			margin: 0;
+		}
+
 		&--contact-section {
 			float: left;
 			margin-left: span(1);
 			margin-right: span(1);
 			width: span(45%);
 
-			.wpcf7-submit {
-				@include primary-cta-btn;
+			@media (max-width: 60em) {
+				width: span(100%);
+				margin: 0;
+			}
+
+			.wpcf7 {
+
+				.your-name,
+				.your-email {
+					@include form-box($box-padding: 1.5em 1em, $box-width: 90%);
+				}
+
+				.your-message {
+					@include form-box($box-padding: .5em 1em, $textarea-height: 7em, $box-width: 90%);
+				}
+
+
+				&-submit {
+					@include primary-cta-btn ($background-color: $racing-blue, $text-color: $white);
+				}
 			}
 		}
 
@@ -27,14 +49,22 @@
 			float: left;
 			width: span(35%);
 
+			@media (max-width: 60em) {
+				width: span(100%);
+			}
+
 			.mailchimp {
 
 				&-signup {
-					@include form-box;
+
+					.form-group {
+						@include form-box($box-padding: 1.5em 1em, $box-width: 90%);
+						margin-bottom: 1.5em;
+					}
 				}
 
-				&--submit {
-					@include primary-cta-btn;
+				&-submit {
+					@include primary-cta-btn ($background-color: $racing-blue, $text-color: $white);
 				}
 			}
 		}
