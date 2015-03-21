@@ -1,6 +1,6 @@
-@mixin form-box ($left-border: $track-gray, $focus-border: $racing-blue, $box-height: 2em, $box-background: $light-gray, $box-padding: 0 1em, $box-width: 100%) {
+@mixin form-box ($left-border: $track-gray, $focus-border: $racing-blue, $box-height: 2em, $box-background: $light-gray, $box-padding: 0 1em, $box-width: 100%, $textarea-height: inherit) {
 
-	input.form-control {
+	input {
 		background-color: $box-background;
 		border-radius: 0;
 		border: 0;
@@ -15,5 +15,10 @@
 		&:focus {
 			border-left: 4px solid $focus-border;
 		}
+	}
+
+	textarea {
+		@extend input;
+		height: $textarea-height;
 	}
 }
