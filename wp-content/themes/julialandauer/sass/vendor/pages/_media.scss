@@ -3,5 +3,82 @@
 --------------------------------------------------------------*/
 
 .media-page {
+
+	&__survivor-wrapper {
+		clear: both;
+		margin-bottom: 4em;
+		margin-left: span(1);
+		margin-right: span(1);
+		overflow: hidden;
+		padding: 0 3em 3em 3em;
+
+		@media (max-width: 60em) {
+			margin: 0;
+			padding: 0 1.5em 1.5em 1.5em;
+		}
+
+		&--left, &--right {
+			float: left;
+			width: span(45%);
+
+			@media (max-width: 60em) {
+				//float: left;
+				width: span(100%);
+			}
+
+			> p {
+				height: auto;
+				width: span(100%);
+			}
+		}
+
+		&--left {
+			margin-right: span(1);
+		}
+
+		&--right {
+			clear: right;
+		}
+
+		h2 {
+			text-align: center;
+		}
+	}
+
+	&__blocks {
+		@extend .media-page__survivor-wrapper;
+
+		h2 {
+			text-align: center;
+		}
+
+		&--huffington, &--media-inquiry {
+			float: left;
+			width: span(45%);
+
+			@media (max-width: 60em) {
+				//float: left;
+				width: span(100%);
+			}
+
+			> p {
+				height: auto;
+				width: span(100%);
+			}
+
+			button {
+				@include center-block;
+				@include primary-cta-btn;
+			}
+		}
+
+		&--huffington {
+			margin-right: span(1);
+		}
+
+		&--media-inquiry {
+			clear: right;
+		}
+	}
 	
 }
