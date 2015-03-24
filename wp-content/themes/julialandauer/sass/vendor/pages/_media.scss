@@ -4,7 +4,7 @@
 
 .media-page {
 
-	&__survivor-wrapper {
+	&__youtube-wrapper {
 		clear: both;
 		margin-bottom: 4em;
 		margin-left: span(1);
@@ -16,6 +16,58 @@
 			margin: 0;
 			padding: 0 1.5em 1.5em 1.5em;
 		}
+
+		&--left-channel, &--right-channel {
+			float: left;
+			width: span(45%);
+
+			@media (max-width: 40em) {
+				width: span(100%);
+			}
+
+			// Youtube Video Scaling
+			iframe {
+				min-height: 19em;
+
+				@media (max-width: 80em) {
+					min-height: 16em;
+				}
+
+				@media (max-width: 60em) {
+					min-height: 14em;
+				}
+
+				@media (max-width: 40em) {
+					min-height: 18em;
+				}
+
+				@media (max-width: 25em) {
+					min-height: 14em;
+				}
+			}
+		}
+
+		&--left-channel {
+			margin-right: span(1);
+		}
+
+		&--right-channel {
+			clear: right;
+		}
+
+		h2 {
+			text-align: center;
+		}
+	}
+
+	&__photos {
+		h1 {
+			text-align: center;
+		}
+	}
+
+	&__survivor-wrapper {
+		@extend .media-page__youtube-wrapper;
 
 		&--left, &--right {
 			float: left;
@@ -57,7 +109,6 @@
 			width: span(45%);
 
 			@media (max-width: 60em) {
-				//float: left;
 				width: span(100%);
 			}
 

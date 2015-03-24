@@ -18,12 +18,16 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="media-page__youtube-wrapper">
-
-					</div>
-
-					<div class="media-page__photos">
-						<h1 class="media-page__photos--title">Photos</h1>
-						<?php putRevSlider(6) ?>
+						<div class="media-page__youtube-wrapper--left-channel">
+							<!-- Load the left youtube channel -->
+							<h2>Race Recaps</h2>
+							<?php  echo get_post_meta($post->ID, 'left-channel', true); ?>
+						</div>
+						<div class="media-page__youtube-wrapper--right-channel">
+							<!-- Load the right youtube channel -->
+							<h2>Video Blogs</h2>
+							<?php  echo get_post_meta($post->ID, 'right-channel', true); ?>
+						</div>
 					</div>
 
 					<div class="media-page__survivor-wrapper">
@@ -41,6 +45,11 @@ get_header(); ?>
 								<?php  echo get_post_meta($post->ID, 'survivor-right', true); ?>
 							</p>
 						</div>
+					</div>
+
+					<div class="media-page__photos">
+						<h1 class="media-page__photos--title">Photos</h1>
+						<?php putRevSlider(6) ?>
 					</div>
 
 					<div class="media-page__blocks">
