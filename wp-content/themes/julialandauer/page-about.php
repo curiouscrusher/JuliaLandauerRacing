@@ -42,13 +42,13 @@ get_header(); ?>
 
 
 					<div class="about-page__schedule">
+					<h1>Upcoming Schedule</h1>
 
 						<!-- Load The Schedule -->
 						<?php
 						  $page_id = 60;
 						  $page_data = get_page( $page_id );
 
-						  echo $page_data->post_title;
 						  echo $page_data->post_content;
 						?>
 					</div>
