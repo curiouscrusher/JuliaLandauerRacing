@@ -12,12 +12,12 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-footer__social">
 			<ul>
-				<li><img src="<?php echo get_template_directory_uri(); ?>/images/social/facebook.svg" alt="facebook"></li>
-				<li><img src="<?php echo get_template_directory_uri(); ?>/images/social/twitter.svg" alt="twitter"></li>
-				<li><img src="<?php echo get_template_directory_uri(); ?>/images/social/instagram.svg" alt="instagram"></li>
-				<li><img src="<?php echo get_template_directory_uri(); ?>/images/social/youtube.svg" alt="youtube"></li>
-				<li><img src="<?php echo get_template_directory_uri(); ?>/images/social/pinterest.svg" alt="pinterest"></li>
-				<li><img src="<?php echo get_template_directory_uri(); ?>/images/social/linkedin.svg" alt="linkedin"></li>
+				<li><a href="http://facebook.com/julialandauerracing" target="blank"><object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/images/social/facebook.svg"></object></a></li>
+				<li><a href="http://twitter.com/julialandauer" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/twitter.svg" alt="twitter"></a></li>
+				<li><a href="http://instagram.com/julialandauer" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/instagram.svg" alt="instagram"></a></li>
+				<li><a href="http://youtube.com/julialandauer" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/youtube.svg" alt="youtube"></a></li>
+				<li><a href="http://pinterest.com/julialandauer" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/pinterest.svg" alt="pinterest"></a></li>
+				<li><a href="http://" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/social/linkedin.svg" alt="linkedin"></a></li>
 			</ul>
 		</div>
 		<hr class="site-footer__divider" />
