@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+>>> Home Page
+--------------------------------------------------------------*/
+
+.home-page {
+	margin-bottom: 4em;
+	margin-left: span(1);
+	margin-right: span(1);
+	overflow: hidden;
+
+	&__fast-facts {
+		display: block;
+		text-align: center;
+	}
+
+	&__sponsor-grid {
+		@extend .partners-page__sponsor-grid;
+
+		&--title {
+			text-align: center;
+		}
+	}
+
+	&__news {
+
+		&--title {
+			text-align: center;
+		}
+	}
+}

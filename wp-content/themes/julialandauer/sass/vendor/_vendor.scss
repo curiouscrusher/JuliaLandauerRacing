@@ -9,11 +9,11 @@ Subtitle
 
 @import "modules/header";
 @import "modules/footer";
-// Keeping custom made mixins seperate
+// Keeping custom made mixins seperate from underscores mixins
 @import "custom-mixins/custom-mixins";
 
 @import "pages/site";
-//@import "pages/home";
+@import "pages/home";
 @import "pages/about";
 @import "pages/media";
 @import "pages/partners";
