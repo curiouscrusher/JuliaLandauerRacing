@@ -11,6 +11,7 @@
 		margin-bottom: 4em;
 		padding-left: span(1);
 		padding-right: span(1);
+		padding-top: 2em;
 		overflow: hidden;
 		// Removed padding as long as
 		// above grid is calculated with it
@@ -28,6 +29,7 @@
 
 		&--meaning, &--why {
 			float: left;
+			padding-bottom: 4em;
 			width: span(45%);
 
 			@media (max-width: 60em) {
