@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+>>> Home Page
+--------------------------------------------------------------*/
+
+.home-page {
+	padding-bottom: 4em;
+	overflow: hidden;
+
+	&__fast-facts {
+		display: block;
+		text-align: center;
+		padding-left: span(1);
+		padding-right: span(1);
+	}
+
+	&__sponsor-grid {
+		@extend .partners-page__sponsor-grid;
+
+		&--title {
+			text-align: center;
+		}
+	}
+
+	&__news {
+		background-color: $racing-blue;
+		
+
+		// .large_bold_white {
+		// 	border-bottom: 2px solid $racing-blue !important;
+		// 	overflow: hidden;
+		// 	padding-bottom: 2em;
+		// 	min-height: 60px;
+		// }
+
+		&--title {
+			color: $white;
+			padding-top: 1em;
+			text-align: center;
+		}
+	}
+}
