@@ -5,17 +5,17 @@
 .about-page {
 
 	&__history {
+		background-color: $racing-blue;
+		color: $white;
 		clear: both;
-		margin-bottom: 4em;
-		margin-left: span(1);
-		margin-right: span(1);
+		padding-bottom: 4em;
+		padding-left: span(1);
+		padding-right: span(1);
 		overflow: hidden;
-		padding: 3em;
+		//padding: 3em;
 
 		@media (max-width: 60em) {
-				padding: 0 1.5em 0 1.5em;
-				margin-left: 0;
-				margin-right: 0;
+				padding: 1em 1.5em 0 1.5em;
 			}
 
 			&--title {
@@ -54,7 +54,9 @@
 
 	&__schedule {
 		@extend .about-page__history;
-		margin-top: 4em;
+		background-color: $white;
+		color: $tire-black;
+		//margin-top: 2em;
 
 		h1 {
 			text-align: center;
@@ -81,6 +83,8 @@
 	}
 
 	&__stats {
-		@extend .about-page__history;
+		@extend .about-page__schedule;
+		display: block;
+		text-align: center;
 	}
 }
