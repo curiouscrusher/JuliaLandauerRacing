@@ -48,7 +48,7 @@ get_header(); ?>
 					</div>
 
 					<div class="media-page__photos">
-						<h1 class="media-page__photos--title">Photos</h1>
+						<!-- <h1 class="media-page__photos--title">Photos</h1> -->
 						<?php putRevSlider(6) ?>
 					</div>
 
