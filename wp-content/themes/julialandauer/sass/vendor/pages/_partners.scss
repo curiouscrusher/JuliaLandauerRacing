@@ -5,16 +5,20 @@
 .partners-page {
 
 	&__reasons {
+		background-color: $racing-blue;
+		color: $white;
 		clear: both;
 		margin-bottom: 4em;
-		margin-left: span(1);
-		margin-right: span(1);
+		padding-left: span(1);
+		padding-right: span(1);
 		overflow: hidden;
-		padding: 0 3em 3em 3em;
+		// Removed padding as long as
+		// above grid is calculated with it
+		// padding: 0 3em 3em 3em;
 		//width: 100%;
 
 		@media (max-width: 60em) {
-				margin: 0;
+				//margin: 0;
 				padding: 0 1.5em 1.5em 1.5em;
 			}
 
@@ -48,6 +52,8 @@
 
 	&__sponsor-grid {
 		@extend .partners-page__reasons;
+		background-color: $white;
+		color: $tire-black;
 
 		&--logo {
 			float: left;
@@ -71,6 +77,8 @@
 
 	&__actions {
 		@extend .partners-page__reasons;
+		background-color: $white;
+		color: $tire-black;
 
 		&--title {
 				text-align: center;
