@@ -22,14 +22,14 @@ get_header(); ?>
 					<div class="partners-page__reasons">
 						<h2 class="partners-page__reasons--title">Learn More About Partnering With Julia</h2>
 							<div class="partners-page__reasons--meaning">
-								<h3 class="partners-page__reasons--title">What It Means</h3>
+								<h3>What It Means</h3>
 									<p>
 										<!-- Load the partners/history text -->
 										<?php  echo get_post_meta($post->ID, 'partners-meaning', true); ?>
 									</p>
 							</div>
 							<div class="partners-page__reasons--why">
-								<h3 class="partners-page__reasons--title">Why You Should</h3>	
+								<h3>Why You Should</h3>	
 									<p>
 										<!-- Load the partners text -->
 										<?php  echo get_post_meta($post->ID, 'partners-why', true); ?>
@@ -38,6 +38,7 @@ get_header(); ?>
 					</div>
 
 					<div class="partners-page__sponsor-grid">
+						<h2 class="partners-page__sponsor-grid--title">Partners</h2>
 							<!-- Load -->
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-1', true); ?>" class="partners-page__sponsor-grid--logo" />
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-2', true); ?>" class="partners-page__sponsor-grid--logo" />
@@ -47,19 +48,7 @@ get_header(); ?>
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-6', true); ?>" class="partners-page__sponsor-grid--logo" />
 					</div>
 
-					<div class="partners-page__partner-photos">
-						<h2 class="partners-page__partner-photos--title">Sponsor Events</h2>
-						<?php putRevSlider(3) ?>
-					</div>
-
 					<div class="partners-page__actions">
-							<div class="partners-page__actions--content">
-								<h3 class="partners-page__actions--title">What It Means</h3>
-									<p>
-										<!-- Load the partners/history text -->
-										<?php  echo get_post_meta($post->ID, 'content', true); ?>
-									</p>
-							</div>
 							<div class="partners-page__actions--partner-with-julia">
 								<h3 class="partners-page__actions--title">Want To Partner With Julia?</h3>	
 									<p>
@@ -68,7 +57,12 @@ get_header(); ?>
 									</p>
 									<a href="<?php echo site_url(); ?>/contact"><button>Contact</button></a>
 							</div>
-					</div>					
+					</div>	
+
+					<div class="partners-page__partner-photos">
+						<h2 class="partners-page__partner-photos--title">Sponsor Events</h2>
+						<?php putRevSlider(3) ?>
+					</div>				
 
 				<?php endwhile; // end of the loop. ?>
 
