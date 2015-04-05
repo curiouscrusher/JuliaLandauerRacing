@@ -57,7 +57,7 @@
 			clear: right;
 		}
 
-		h2 {
+		h3 {
 			text-align: center;
 		}
 	}
@@ -69,42 +69,64 @@
 	}
 
 	&__survivor-wrapper {
-		@extend .media-page__youtube-wrapper;
-		background-color: $racing-blue;
-		color: $white;
+		padding-bottom: 4em;
+		overflow: hidden;
 
-		&--left, &--right {
-			float: left;
-			width: span(45%);
+		&--block-1 {
+			@include clearfix;
+			margin-bottom: 4em;
 
-			@media (max-width: 60em) {
-				//float: left;
-				width: span(100%);
+			p {
+				float: left;
+				padding-left: span(1);
+				width: span(45%);
 			}
 
-			> p {
-				height: auto;
-				width: span(100%);
+			img {
+				float: right;
+				width: span(48%);
 			}
 		}
 
-		&--left {
-			margin-right: span(1);
+		&--block-2 {
+			@include clearfix;
+
+			p {
+				float: right;
+				padding-right: span(1);
+				width: span(45%);
+			}
+
+			img {
+				float: left;
+				width: span(48%);
+			}
 		}
 
-		&--right {
-			clear: right;
+		// Block media queries
+		@media (max-width: 60em) {
+			&--block-1,
+			&--block-2 {
+				p,
+				img {
+					width: span(100%);
+				}
+
+				p {
+					padding-left: span(1);
+					padding-right: span(1);
+				}
+			}
 		}
 
 		h2 {
 			text-align: center;
+			padding: .75em 0;
 		}
 	}
 
 	&__blocks {
-		@extend .media-page__survivor-wrapper;
-		background-color: $white;
-		color: $tire-black;
+		@extend .media-page__youtube-wrapper;
 
 		h2 {
 			text-align: center;
