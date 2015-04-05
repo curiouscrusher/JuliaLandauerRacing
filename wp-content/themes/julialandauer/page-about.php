@@ -20,7 +20,7 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="about-page__history">
-						<h1 class="about-page__history--title">About Julia</h1>
+						<h2 class="about-page__history--title">About Julia</h2>
 						<div class="about-page__history--left">
 						<p>
 							<!-- Load the about/history text -->
@@ -42,7 +42,7 @@ get_header(); ?>
 
 
 					<div class="about-page__schedule">
-					<h1>Upcoming Schedule</h1>
+					<h2>Upcoming Schedule</h2>
 
 						<!-- Load The Schedule -->
 						<?php

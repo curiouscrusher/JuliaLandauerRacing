@@ -20,16 +20,16 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="partners-page__reasons">
-						<h1 class="partners-page__reasons--title">Learn More About Partnering With Julia</h1>
+						<h2 class="partners-page__reasons--title">Learn More About Partnering With Julia</h2>
 							<div class="partners-page__reasons--meaning">
-								<h2 class="partners-page__reasons--title">What It Means</h2>
+								<h3 class="partners-page__reasons--title">What It Means</h3>
 									<p>
 										<!-- Load the partners/history text -->
 										<?php  echo get_post_meta($post->ID, 'partners-meaning', true); ?>
 									</p>
 							</div>
 							<div class="partners-page__reasons--why">
-								<h2 class="partners-page__reasons--title">Why You Should</h2>	
+								<h3 class="partners-page__reasons--title">Why You Should</h3>	
 									<p>
 										<!-- Load the partners text -->
 										<?php  echo get_post_meta($post->ID, 'partners-why', true); ?>
@@ -48,20 +48,20 @@ get_header(); ?>
 					</div>
 
 					<div class="partners-page__partner-photos">
-						<h1 class="partners-page__partner-photos--title">Sponsor Events</h1>
+						<h2 class="partners-page__partner-photos--title">Sponsor Events</h2>
 						<?php putRevSlider(3) ?>
 					</div>
 
 					<div class="partners-page__actions">
 							<div class="partners-page__actions--content">
-								<h2 class="partners-page__actions--title">What It Means</h2>
+								<h3 class="partners-page__actions--title">What It Means</h3>
 									<p>
 										<!-- Load the partners/history text -->
 										<?php  echo get_post_meta($post->ID, 'content', true); ?>
 									</p>
 							</div>
 							<div class="partners-page__actions--partner-with-julia">
-								<h2 class="partners-page__actions--title">Want To Partner With Julia?</h2>	
+								<h3 class="partners-page__actions--title">Want To Partner With Julia?</h3>	
 									<p>
 										<!-- Load the partners text -->
 										<?php  echo get_post_meta($post->ID, 'partner-with-julia', true); ?>

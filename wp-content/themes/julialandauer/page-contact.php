@@ -19,7 +19,7 @@ get_header(); ?>
 
 					<div class="contact-page__wrapper">
 							<div class="contact-page__wrapper--contact-section">
-								<h2 class="contact-page__reasons--title">Contact Us</h2>
+								<h4 class="contact-page__reasons--title">Contact Us</h4>
 
 								<p>Whether you would like to partner with Julia Landauer Racing or just say hi, Julia and the team would love to hear from you.
 								<br /><br />
@@ -49,7 +49,7 @@ get_header(); ?>
 
 									<!-- Begin MailChimp Signup Form -->
 									<div id="mc_embed_signup" class="mailchimp-signup">
-									<h2>Signup For Fan Mail!</h2>
+									<h4>Signup For Fan Mail!</h4>
 										<form action="//julialandauer.us9.list-manage.com/subscribe/post?u=1ec5ea0db145448aa433052d1&amp;id=9fb1ba425c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 											<div id="mc_embed_signup_scroll">
 

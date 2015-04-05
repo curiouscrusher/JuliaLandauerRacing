@@ -20,18 +20,18 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="home-page__fast-facts">
-						<h1 class="home-page__fast-facts--title">Fast Facts</h1>
+						<h2 class="home-page__fast-facts--title">Fast Facts</h2>
 						<img src="http://placehold.it/1200x1500">
 					</div>
 
 					<div class="home-page__news">
-						<h1 class="home-page__news--title">Latest News</h1>
+						<h2 class="home-page__news--title">Latest News</h2>
 						<?php putRevSlider(8) ?>
 					</div>
 
 
 					<div class="home-page__sponsor-grid">
-						<h1 class="home-page__sponsor-grid--title">Sponsors</h1>
+						<h2 class="home-page__sponsor-grid--title">Sponsors</h2>
 							<!-- Sponsor Logo Grid -->
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-1', true); ?>" class="partners-page__sponsor-grid--logo" />
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-2', true); ?>" class="partners-page__sponsor-grid--logo" />

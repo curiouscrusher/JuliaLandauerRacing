@@ -18,7 +18,7 @@ get_header(); ?>
 					<div class="shop-page__wrapper">
 						
 							<div class="shop-page__hero-card">
-								<!-- <h2 class="shop-page__hero-card- -title">Hero Card</h2> -->
+								<!-- <h3 class="shop-page__hero-card- -title">Hero Card</h3> -->
 									<p class="shop-page__hero-card--description">
 										<!-- Load the hero card text -->
 										<?php  echo get_post_meta($post->ID, 'hero-card-text', true); ?>
@@ -33,7 +33,7 @@ get_header(); ?>
 							<div class="shop-page__water-bottle">
 								
 									<div class="shop-page__water-bottle--description">
-										<h2>JLR Water Bottle</h2>
+										<h3>JLR Water Bottle</h3>
 										<!-- Load the water bottle text -->
 										<?php  echo get_post_meta($post->ID, 'water-bottle-text', true); ?>
 
@@ -57,7 +57,7 @@ get_header(); ?>
 							<div class="shop-page__hat">
 								
 									<div class="shop-page__hat--description">
-										<h2>JLR Hat</h2>
+										<h3>JLR Hat</h3>
 										<!-- Load the hat text -->
 										<?php  echo get_post_meta($post->ID, 'hat-text', true); ?>
 
@@ -77,7 +77,7 @@ get_header(); ?>
 							<div class="shop-page__shirt">
 								
 									<div class="shop-page__shirt--description">
-										<h2>JLR Shirt</h2>
+										<h3>JLR Shirt</h3>
 										<!-- Load the shirt text -->
 										<?php  echo get_post_meta($post->ID, 'shirt-text', true); ?>
 
