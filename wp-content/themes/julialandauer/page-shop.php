@@ -18,13 +18,15 @@ get_header(); ?>
 					<div class="shop-page__wrapper">
 						
 							<div class="shop-page__hero-card">
-								<!-- <h3 class="shop-page__hero-card- -title">Hero Card</h3> -->
-									<p class="shop-page__hero-card--description">
+								<div  class="shop-page__hero-card--description">
+									<h3>Hero Card</h3>
+									<p>
 										<!-- Load the hero card text -->
 										<?php  echo get_post_meta($post->ID, 'hero-card-text', true); ?>
 
 										<button>Order Now</button>
 									</p>
+								</div>
 
 									<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'shop-page-hero-card-front', true); ?>" class="shop-page__hero-card--image" />
 
@@ -35,8 +37,10 @@ get_header(); ?>
 									<div class="shop-page__water-bottle--description">
 										<h3>JLR Water Bottle</h3>
 										<!-- Load the water bottle text -->
+										<p>
 										<?php  echo get_post_meta($post->ID, 'water-bottle-text', true); ?>
-
+										</p>
+										<!-- Disassembled PayPal buttons for better styling -->
 										<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 											<input type="hidden" name="cmd" value="_s-xclick">
 											<input type="hidden" name="hosted_button_id" value="MN3DQWSMWH6RG">
@@ -59,8 +63,10 @@ get_header(); ?>
 									<div class="shop-page__hat--description">
 										<h3>JLR Hat</h3>
 										<!-- Load the hat text -->
+										<p>
 										<?php  echo get_post_meta($post->ID, 'hat-text', true); ?>
-
+										</p>
+										<!-- Disassembled PayPal buttons for better styling -->
 										<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 											<input type="hidden" name="cmd" value="_s-xclick">
 											<input type="hidden" name="hosted_button_id" value="8JDRV4F5KXLLA">
@@ -79,8 +85,10 @@ get_header(); ?>
 									<div class="shop-page__shirt--description">
 										<h3>JLR Shirt</h3>
 										<!-- Load the shirt text -->
+										<p>
 										<?php  echo get_post_meta($post->ID, 'shirt-text', true); ?>
-
+										</p>
+										<!-- Disassembled PayPal buttons for better styling -->
 										<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 											<input type="hidden" name="cmd" value="_s-xclick">
 											<input type="hidden" name="hosted_button_id" value="5QGKJQMMSN9LU">
@@ -88,7 +96,7 @@ get_header(); ?>
 													<input type="submit" value="Order Now" border="0" name="submit" alt="">
 												</button>
 											<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-											<table>
+											<table class="shop-page__shirt--sizes">
 												<tr>
 													<td>
 														<input type="hidden" name="on0" value="Sizes">Sizes

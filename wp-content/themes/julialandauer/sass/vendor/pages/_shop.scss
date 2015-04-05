@@ -53,5 +53,10 @@
 			@include center-block;
 			margin-top: 2em;
 		}
+
+		&--sizes {
+			margin-top: -10px;
+			text-align: center;
+		}
 	}
 }
