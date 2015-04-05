@@ -9,14 +9,14 @@
     border-radius: 1.5rem;
     box-shadow: none;
     color: $text-color;
-    font-size: $body-copy;
+    font-size: $button-copy;
     line-height: 2;
     outline: none;
     overflow: hidden;
-    padding: 0;
+    padding: 0 1em;
     text-shadow: none;
     transition: all .2s ease 0s;
-    width: 7rem;
+    width: auto;
 
     &:hover {
         background-color: $hover-background;
@@ -53,7 +53,7 @@
         box-shadow: none; 
         color: $text-color;
         font-family: $primary-font;
-        font-size: $body-copy;
+        font-size: $button-copy;
         line-height: inherit; 
         padding: 0; 
         text-shadow: none;
