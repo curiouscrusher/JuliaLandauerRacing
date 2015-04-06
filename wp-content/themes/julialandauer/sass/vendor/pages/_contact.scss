@@ -10,7 +10,7 @@
 		margin-left: span(1);
 		margin-right: span(1);
 		overflow: hidden;
-		padding: 0 3em 3em 3em;
+		padding: 3em;
 
 		@media (max-width: 60em) {
 			margin: 0;
@@ -40,7 +40,8 @@
 
 
 				&-submit {
-					@include primary-cta-btn ($background-color: $racing-blue, $text-color: $white);
+					// Use px value font size to solve bug
+					@include primary-cta-btn ($background-color: $racing-blue, $text-color: $white, $font-size: 20px);
 				}
 			}
 		}
@@ -48,6 +49,32 @@
 		&--info-section {
 			float: left;
 			width: span(35%);
+
+			.email,
+			.phone,
+			.address {
+				padding: .5em 0;
+
+				> p { margin: 0; }
+			}
+
+			.email:before {
+				content: url(../julialandauer/images/envelope.svg);
+				float: left;
+				margin-right: 1em;
+			}
+
+			.phone:before {
+				content: url(../julialandauer/images/phone.svg);
+				float: left;
+				margin-right: 1em;
+			}
+
+			.address:before {
+				content: url(../julialandauer/images/home.svg);
+				float: left;
+				margin-right: 1em;
+			}
 
 			@media (max-width: 60em) {
 				width: span(100%);
