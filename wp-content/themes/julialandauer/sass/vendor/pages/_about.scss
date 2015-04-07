@@ -58,6 +58,8 @@
 		@extend .about-page__history;
 		background-color: $white;
 		color: $tire-black;
+		padding-top: 4em;
+		padding-bottom: 6em;
 		//margin-top: 2em;
 
 		h2 {
@@ -86,6 +88,8 @@
 
 	&__stats {
 		@extend .about-page__schedule;
+		background: $racing-blue;
+		color: $white;
 		display: block;
 		text-align: center;
 	}

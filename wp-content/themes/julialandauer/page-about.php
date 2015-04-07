@@ -15,8 +15,6 @@ get_header(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					
-					
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="about-page__history">
@@ -40,7 +38,6 @@ get_header(); ?>
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'history_hero', true); ?>" />
 					</div>
 
-
 					<div class="about-page__schedule">
 					<h2>Upcoming Schedule</h2>
 
@@ -54,7 +51,9 @@ get_header(); ?>
 					</div>
 
 					<div class="about-page__stats">
-						<img src="http://placehold.it/1200x400">
+					<h2>Julia's Statistics</h2>
+						<img src="<?php echo get_template_directory_uri(); ?>/images/stats-1.png">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/stats-2.png">
 					</div>
 
 					
