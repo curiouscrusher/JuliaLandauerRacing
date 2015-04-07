@@ -12,6 +12,7 @@
 		overflow: hidden;
 		padding: 3em;
 
+		// Breakpoints
 		@media (max-width: 60em) {
 			margin: 0;
 		}
@@ -55,9 +56,14 @@
 			.address {
 				padding: .5em 0;
 
-				> p { margin: 0; }
+				> p {
+					margin-bottom: 0;
+					margin-left: 2em;
+					margin-top: 0;
+				}
 			}
 
+			// Icons
 			.email:before {
 				content: url(../julialandauer/images/envelope.svg);
 				float: left;
@@ -76,6 +82,7 @@
 				margin-right: 1em;
 			}
 
+			// Breakpoints
 			@media (max-width: 60em) {
 				width: span(100%);
 			}
