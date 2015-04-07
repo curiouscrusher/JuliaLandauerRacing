@@ -6,9 +6,10 @@
 
 	&__youtube-wrapper {
 		clear: both;
-		padding-bottom: 4em;
+		padding-bottom: 8em;
 		padding-left: span(1);
 		padding-right: span(1);
+		padding-top: 6em;
 		overflow: hidden;
 		// Removed padding as long as spans are
 		// being used for grid
@@ -70,6 +71,7 @@
 
 	&__survivor-wrapper {
 		padding-bottom: 4em;
+		padding-top: 2em;
 		overflow: hidden;
 
 		&--block-1 {
