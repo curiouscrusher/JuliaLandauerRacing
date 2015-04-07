@@ -147,7 +147,7 @@
 
 			button {
 				@include center-block;
-				@include primary-cta-btn;
+				@include primary-cta-btn($font-size: 1em);
 			}
 		}
 

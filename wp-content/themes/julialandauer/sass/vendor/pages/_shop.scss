@@ -16,7 +16,7 @@
 		@include product-right;
 
 		button {
-			@include primary-cta-btn;
+			@include primary-cta-btn($font-size: 1em);
 			@include center-block;
 			margin-top: 2em;
 		}

@@ -106,7 +106,7 @@
 
 			button {
 				@include center-block;
-				@include primary-cta-btn($text-color: $white, $btn-border: $white, $hover-color: $dark-blue);
+				@include primary-cta-btn($text-color: $white, $btn-border: $white, $hover-color: $dark-blue, $font-size: 1em);
 			}
 		}
 	}
