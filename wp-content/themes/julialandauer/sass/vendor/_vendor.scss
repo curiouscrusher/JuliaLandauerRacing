@@ -1,21 +1,18 @@
 /*--------------------------------------------------------------
->>> TITLE
-----------------------------------------------------------------
-Subtitle
---------------------------------------------------------------*/
+>>> All imports live here
+----------------------------------------------------------------*/
 
+// Susy Magic Grids
 @import "susy/susy";
+
+// Site Design Partials - Keep First
 @import "design/design";
 
-@import "modules/header";
-@import "modules/footer";
-// Keeping custom made mixins seperate from underscores mixins
+// Site Module Partials
+@import "modules/modules";
+
+// Custom Mixins Seperated From Underscores For Modularity
 @import "custom-mixins/custom-mixins";
 
-@import "pages/site";
-@import "pages/home";
-@import "pages/about";
-@import "pages/media";
-@import "pages/partners";
-@import "pages/shop";
-@import "pages/contact";
+// Page Partials
+@import "pages/pages";
