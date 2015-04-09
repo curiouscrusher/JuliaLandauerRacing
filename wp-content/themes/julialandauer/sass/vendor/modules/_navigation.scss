@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+>>> Navigation
+--------------------------------------------------------------*/
+
+
+@media screen and (max-width: 600px) {
+	.main-navigation {
+		float: right;
+		margin: 0;
+		width: span(100%);
+
+		li {
+			border-bottom: 1px solid $tire-black;
+			float: none;
+			margin: 0;
+			padding: 1em;
+			width: span(100%);
+
+			&:hover {
+				background: $racing-blue;
+
+				> a {
+					color: $white;
+				}
+			}
+		}
+
+		.menu-main-menu-container {
+			float: left;
+			margin-top: 1em;
+			width: span(100%);
+		}
+
+		.menu-toggle {
+			background-color: transparent;
+			border-radius: 0;
+			box-shadow: none;
+
+			button {
+				background-color: transparent;
+				background-image: url(../julialandauer/images/menu.svg) no-repeat;
+				height: 13px;
+				width: 18px;
+			}
+		}
+
+		.menu-toggle,
+			.main-navigation.toggled .nav-menu {
+				float: right;
+			}
+	}
+}
