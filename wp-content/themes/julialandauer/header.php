@@ -25,7 +25,7 @@
 		<div class="site-branding">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 			<picture>
-				<source srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-1600.svg" media="(min-width: 1600px)">
+				<source srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-1600.svg" media="(min-width: 1200px)">
 				<source srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-768.svg" media="(min-width: 768px)">
 				<source srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-400.svg" >
 					<img srcset="<?php echo get_template_directory_uri(); ?>/images/logo/logo-400.svg" src="<?php echo get_template_directory_uri(); ?>/images/logo/logo-1600.svg" alt="">
