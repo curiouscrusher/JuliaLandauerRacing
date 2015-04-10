@@ -11,7 +11,7 @@
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
+	button = container.getElementsByClassName( 'menu-icon' )[0];
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
@@ -31,6 +31,9 @@
 	}
 
 	button.onclick = function() {
+		// Toggle the menu icon
+		button.classList.toggle('open');
+
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
