@@ -6,6 +6,7 @@
 
 	&__topics {
 		overflow: hidden;
+		margin-bottom: 2em;
 		padding-left: span(1);
 		padding-right: span(1);
 
@@ -25,6 +26,14 @@
 			margin-bottom: .25em;
 			text-align: center;
 			width: 1.5em;
+
+			@media (max-width: 60em) {
+				border-radius: 2.5em;
+				font-size: 6em;
+				height: 1.25em;
+				line-height: 1.25em;
+				width: 1.25em;
+			}
 		}
 
 		&--team,
@@ -43,7 +52,10 @@
 	}
 
 	&__contact {
-		@extend .speaking-page__topics;
+		overflow: hidden;
+		margin-bottom: 2em;
+		padding-left: span(2);
+		padding-right: span(2);
 		margin-top: 4em;
 
 		&--title,
@@ -97,6 +109,14 @@
 
 			.your-message {
 				@include form-box($box-padding: .5em 1em, $textarea-height: 7em, $box-width: 95%);
+
+				textarea {
+					min-height: 10em;
+
+					@media (max-width: 60em) {
+						min-height: inherit;
+					}
+				}
 			}
 
 

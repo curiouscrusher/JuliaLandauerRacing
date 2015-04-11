@@ -23,20 +23,23 @@ get_header(); ?>
 						<h2 class="speaking-page__topics--title">Events &amp; Speaking</h2>
 							<div class="speaking-page__topics--team">
 								<h1>1</h1>
+								<h4>Team Building</h4>
 									<p>
 										<!-- Load the speaking/history text -->
 										<?php  echo get_post_meta($post->ID, 'speaking-team', true); ?>
 									</p>
 							</div>
 							<div class="speaking-page__topics--branding">
-								<h1>2</h1>	
+								<h1>2</h1>
+								<h4>Branding &amp; Marketing</h4>	
 									<p>
 										<!-- Load the speaking text -->
 										<?php  echo get_post_meta($post->ID, 'speaking-branding', true); ?>
 									</p>
 							</div>
 							<div class="speaking-page__topics--stem">
-								<h1>3</h1>	
+								<h1>3</h1>
+								<h4>STEM</h4>	
 									<p>
 										<!-- Load the speaking text -->
 										<?php  echo get_post_meta($post->ID, 'speaking-stem', true); ?>
