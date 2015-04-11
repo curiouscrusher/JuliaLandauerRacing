@@ -31,7 +31,7 @@ get_header(); ?>
 
 
 					<div class="home-page__sponsor-grid">
-						<h2 class="home-page__sponsor-grid--title">Sponsors</h2>
+						<h2 class="home-page__sponsor-grid--title">Partners</h2>
 							<!-- Sponsor Logo Grid -->
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-1', true); ?>" class="partners-page__sponsor-grid--logo" />
 							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-2', true); ?>" class="partners-page__sponsor-grid--logo" />
