@@ -118,6 +118,10 @@ function create_posttype() {
 */
 add_action( 'init', 'create_posttype' );
 
+/** 
+* Register featured images
+*/
+add_theme_support( 'post-thumbnails' );
 
 /**
  * Enqueue scripts and styles.
