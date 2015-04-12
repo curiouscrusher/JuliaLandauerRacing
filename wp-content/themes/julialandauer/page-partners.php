@@ -60,7 +60,7 @@ get_header(); ?>
 					</div>	
 
 					<div class="partners-page__partner-photos">
-						<h2 class="partners-page__partner-photos--title">Sponsor Events</h2>
+						<h2 class="partners-page__partner-photos--title">Partner Events</h2>
 						<?php putRevSlider(3) ?>
 					</div>				
 
