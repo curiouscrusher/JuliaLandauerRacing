@@ -119,6 +119,10 @@
 					padding-right: span(1);
 				}
 			}
+
+			&--block-2 img {
+				display: none;
+			}
 		}
 
 		h2 {
@@ -134,7 +138,7 @@
 			text-align: center;
 		}
 
-		&--huffington, &--media-inquiry {
+		&--huffington, &--featured-articles {
 			float: left;
 			width: span(45%);
 
@@ -157,7 +161,7 @@
 			margin-right: span(1);
 		}
 
-		&--media-inquiry {
+		&--featured-articles {
 			clear: right;
 		}
 	}

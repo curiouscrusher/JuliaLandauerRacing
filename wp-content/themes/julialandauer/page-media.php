@@ -67,13 +67,13 @@ get_header(); ?>
 									</p>
 									<a href="#"><button>Read More</button></a>
 							</div>
-							<div class="media-page__blocks--media-inquiry">
-								<h3>Media Inquiry</h3>	
+							<div class="media-page__blocks--featured-articles">
+								<h3>Featured Articles</h3>	
 									<p>
 										<!-- Load the media inquiry text -->
-										<?php  echo get_post_meta($post->ID, 'media-inquiry', true); ?>
+										<?php  echo get_post_meta($post->ID, 'featured-articles', true); ?>
 									</p>
-									<a href="<?php echo site_url(); ?>/contact"><button>Contact</button></a>
+									<a href="<?php echo site_url(); ?>/articles"><button>Read More</button></a>
 							</div>
 					</div>					
 
