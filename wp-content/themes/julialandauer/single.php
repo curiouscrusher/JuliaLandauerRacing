@@ -12,6 +12,9 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
+			<!-- Check For Featured Image -->
+			<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }	?>
+
 			<?php get_template_part( 'content', 'single' ); ?>
 
 			<?php the_post_navigation(); ?>
