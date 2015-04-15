@@ -9,24 +9,28 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="single">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<!-- Check For Featured Image -->
-			<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }	?>
+					<div class="single__featured-image">
+						<!-- Check For Featured Image -->
+						<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); }	?>
+					</div>
 
-			<?php get_template_part( 'content', 'single' ); ?>
+					<div class="single__post-title">
+						<h2><?php the_title(); ?></h2>
+					</div>
 
-			<?php the_post_navigation(); ?>
+					<div class="single__post-content">
+						<?php the_content(); ?>
+					</div>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+					<!-- <?php the_post_navigation(); ?> -->
 
-		<?php endwhile; // end of the loop. ?>
+				<?php endwhile; // end of the loop. ?>
+
+			</div><!-- single -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

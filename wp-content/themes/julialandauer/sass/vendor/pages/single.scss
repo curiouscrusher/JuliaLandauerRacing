@@ -2,4 +2,63 @@
 >>> Single  Post Page
 --------------------------------------------------------------*/
 
+.single {
 
+	&__featured-image {
+		clear: both;
+		margin-top: 3em;
+		margin-bottom: 4em;
+		max-height: 550px;
+		overflow: hidden;
+		width: 100%;
+
+		@media (max-width: 60em) {
+			margin-bottom: 1em;
+		}
+
+		> img {
+			width: 100%;
+		}
+	}
+
+	&__post-title {
+		margin-left: span(1.5);
+		margin-right: span(1.5);
+		text-align: center; 
+
+		@media (max-width: 60em) {
+			margin-left: 1.5em;
+			margin-right: 1.5em;
+
+			> h2 { font-size: 2em;	}
+		}
+	}
+
+	&__post-content {		
+		padding-bottom: 4em;
+		padding-left: span(30%);
+		padding-right: span(30%);
+		padding-top: 2em;
+		overflow: hidden;
+
+		@media (max-width: 60em) {
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+		}
+
+		> p {
+			clear: both;
+			font-family: $tertiary-font;
+			font-weight: $light-weight;
+			line-height: 1.75em;
+
+			@media (max-width: 60em) {
+				font-size: 1.25em;
+			}
+
+			> img {
+				padding: .5em 0 2em 0;
+			}
+		}
+	}
+}

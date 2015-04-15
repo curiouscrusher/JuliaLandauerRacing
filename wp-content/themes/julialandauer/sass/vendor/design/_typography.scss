@@ -2,15 +2,20 @@
 >>> TYPOGRAPHY
 ----------------------------------------------------------------*/
 
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Quattrocento+Sans:400,700);
-@import url(http://fonts.googleapis.com/css?family=Play:700);
+// Merged Font Imports
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Quattrocento+Sans:400,700),
+ url(http://fonts.googleapis.com/css?family=Play:700),
+ url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
 
 $primary-font:	 'Quattrocento Sans' , Helvetica, sans-serif;
 $secondary-font: 'Play' , Arial, sans-serif;
+$tertiary-font:	 'Roboto Slab', Georgia, serif;
 $body-copy:		  1.225em;
 $footer-copy:	  1em;
 $button-copy:	  1.225em;
-//$feature-copy:	  1.5em;
+$light-weight: 	  300;
+$normal-weight:   400;
+$bold: 			  700;
 
 p,
 a {
