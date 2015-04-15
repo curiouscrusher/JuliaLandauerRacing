@@ -10,6 +10,11 @@
 		padding-left: span(1);
 		padding-right: span(1);
 
+		@media (max-width: 60em) {
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+		}
+
 		&--title {
 			text-align: center;
 			padding: 1em 0;
@@ -59,6 +64,11 @@
 		padding-right: span(2);
 		margin-top: 4em;
 
+		@media (max-width: 60em) {
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+		}
+
 		&--title,
 		&--lead {
 			text-align: center;
@@ -95,10 +105,10 @@
 				p:nth-of-type(1),
 				p:nth-of-type(2) {
 					float: left;
-					width: 100%;
+					width: span(100%);
 				}
 				p:nth-of-type(3) {
-					width: 95%;
+					width: span(95%);
 				}
 			}
 

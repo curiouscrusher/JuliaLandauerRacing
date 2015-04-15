@@ -48,7 +48,7 @@ get_header(); ?>
 					</div>
 
 					<div class="speaking-page__testimonials">
-						<?php putRevSlider(3) ?>
+						<?php putRevSlider(11) ?>
 					</div>	
 
 					<div class="speaking-page__contact">
