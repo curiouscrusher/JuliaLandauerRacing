@@ -60,6 +60,19 @@
 		@extend .speaking-page__topics;
 		margin-top: 4em;
 
+		&--left-block,
+		&--right-block {
+			float: left;
+			margin-right: 5%;
+			text-align: center;
+			width: span(45%);
+
+			@media (max-width: 60em) {
+				width: 100%;
+				margin: 0;
+			}
+		}
+
 		> h4 { text-align: center; }
 
 		> p {

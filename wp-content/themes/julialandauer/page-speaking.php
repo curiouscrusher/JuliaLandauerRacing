@@ -44,12 +44,20 @@ get_header(); ?>
 					</div>	
 
 					<div class="speaking-page__video-feature">
-						<h4><?php  echo get_post_meta($post->ID, 'speaking-video-title', true); ?></h4>
-						<p><?php  echo get_post_meta($post->ID, 'speaking-video-text', true); ?></p>
-						<div class="speaking-page__video-feature--video">
-							<?php  echo get_post_meta($post->ID, 'speaking-video-code', true); ?>
+						<div class="speaking-page__video-feature--left-block">
+							<h4><?php  echo get_post_meta($post->ID, 'speaking-video-left-title', true); ?></h4>
+							<p><?php  echo get_post_meta($post->ID, 'speaking-video-left-text', true); ?></p>
+							<div class="speaking-page__video-feature--video">
+								<?php  echo get_post_meta($post->ID, 'speaking-video-left-code', true); ?>
+							</div>
 						</div>
-
+						<div class="speaking-page__video-feature--right-block">
+							<h4><?php  echo get_post_meta($post->ID, 'speaking-video-right-title', true); ?></h4>
+							<p><?php  echo get_post_meta($post->ID, 'speaking-video-right-text', true); ?></p>
+							<div class="speaking-page__video-feature--video">
+								<?php  echo get_post_meta($post->ID, 'speaking-video-right-code', true); ?>
+							</div>
+						</div>
 					</div>
 
 					<div class="speaking-page__contact">
