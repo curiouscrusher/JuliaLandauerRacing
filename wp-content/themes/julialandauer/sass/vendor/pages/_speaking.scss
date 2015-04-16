@@ -6,7 +6,7 @@
 
 	&__topics {
 		overflow: hidden;
-		margin-bottom: 2em;
+		margin-bottom: 4em;
 		padding-left: span(1);
 		padding-right: span(1);
 
@@ -42,13 +42,12 @@
 			}
 		}
 
-		&--team,
-		&--branding,
-		&--stem {
+		&--nice-girls,
+		&--branding {
 			float: left;
-			margin-right: 3%;
+			margin-right: 5%;
 			text-align: center;
-			width: span(30%);
+			width: span(45%);
 
 			@media (max-width: 60em) {
 				width: 100%;
@@ -57,12 +56,33 @@
 		}
 	}
 
+	&__video-feature {
+		@extend .speaking-page__topics;
+		margin-top: 4em;
+
+		> h4 { text-align: center; }
+
+		> p {
+			padding-left: span(3);
+			padding-right: span(3);
+			text-align: center;
+
+			@media (max-width: 60em) {
+				padding: 0;
+			}
+		}
+
+		&--video {
+			text-align: center;
+		}
+	}
+
 	&__contact {
 		overflow: hidden;
 		margin-bottom: 2em;
 		padding-left: span(2);
 		padding-right: span(2);
-		margin-top: 4em;
+		margin-top: 6em;
 
 		@media (max-width: 60em) {
 			padding-left: 1.5em;

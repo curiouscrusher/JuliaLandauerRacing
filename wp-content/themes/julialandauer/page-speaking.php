@@ -21,28 +21,20 @@ get_header(); ?>
 
 					<div class="speaking-page__topics">
 						<h2 class="speaking-page__topics--title">Events &amp; Speaking</h2>
-							<div class="speaking-page__topics--team">
+							<div class="speaking-page__topics--nice-girls">
 								<h1>1</h1>
-								<h4>Team Building</h4>
+								<h4>Can Nice Girls Win (Races)?</h4>
 									<p>
 										<!-- Load the speaking/history text -->
-										<?php  echo get_post_meta($post->ID, 'speaking-team', true); ?>
+										<?php  echo get_post_meta($post->ID, 'speaking-nice-girls', true); ?>
 									</p>
 							</div>
 							<div class="speaking-page__topics--branding">
 								<h1>2</h1>
-								<h4>Branding &amp; Marketing</h4>	
+								<h4>The Brand of You</h4>	
 									<p>
 										<!-- Load the speaking text -->
 										<?php  echo get_post_meta($post->ID, 'speaking-branding', true); ?>
-									</p>
-							</div>
-							<div class="speaking-page__topics--stem">
-								<h1>3</h1>
-								<h4>STEM</h4>	
-									<p>
-										<!-- Load the speaking text -->
-										<?php  echo get_post_meta($post->ID, 'speaking-stem', true); ?>
 									</p>
 							</div>
 					</div>
@@ -50,6 +42,15 @@ get_header(); ?>
 					<div class="speaking-page__testimonials">
 						<?php putRevSlider(11) ?>
 					</div>	
+
+					<div class="speaking-page__video-feature">
+						<h4><?php  echo get_post_meta($post->ID, 'speaking-video-title', true); ?></h4>
+						<p><?php  echo get_post_meta($post->ID, 'speaking-video-text', true); ?></p>
+						<div class="speaking-page__video-feature--video">
+							<?php  echo get_post_meta($post->ID, 'speaking-video-code', true); ?>
+						</div>
+
+					</div>
 
 					<div class="speaking-page__contact">
 						<h4 class="speaking-page__contact--title">Ready For Julia To Speak At Your Event?</h4>
