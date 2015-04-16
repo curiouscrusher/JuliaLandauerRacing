@@ -22,13 +22,13 @@ get_header(); ?>
 						<div class="about-page__history--left">
 						<p>
 							<!-- Load the about/history text -->
-							<?php  echo get_post_meta($post->ID, 'history_left', true); ?>
+							<?php  echo get_post_meta($post->ID, 'about_left', true); ?>
 						</p>
 						</div>
 						<div class="about-page__history--right">
 						<p>
 							<!-- Load the about/history text -->
-							<?php  echo get_post_meta($post->ID, 'history_right', true); ?>
+							<?php  echo get_post_meta($post->ID, 'about_right', true); ?>
 						</p>
 						</div>
 					</div>
