@@ -7,10 +7,85 @@
 	overflow: hidden;
 
 	&__fast-facts {
-		display: block;
+		// color: $racing-blue;
+		// display: block;
+		// overflow: hidden;
+		margin-top: 2em;
 		text-align: center;
-		padding-left: span(1);
-		padding-right: span(1);
+
+		strong { font-family: $secondary-font; }
+
+		&--races, {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// Disabled for now due to svg size
+			//margin: 8em 0;
+			overflow: hidden;
+			padding-left: span(2);
+			padding-right: span(2);
+			
+			&-icon {
+				float: left;
+				width: span(5);
+			}
+
+			&-title {
+				float: left;
+				width: span(5);
+			}
+		}
+
+		&--championship {
+			background-color: $racing-blue;
+			color: $white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			padding-top: 10em;
+			padding-bottom: 10em;
+			padding-left: span(2);
+			padding-right: span(2);
+
+			&-title {
+				float: left;
+				width: span(5);
+			}
+
+			&-icon {
+				float: right;
+				width: span(5);
+
+				img  {
+					width: 55%;
+				}
+			}
+		}
+
+		&--stats {
+			color: $racing-blue;
+			margin: 8em 0;
+			overflow: hidden;
+			width: span(100%);
+			padding-left: span(2);
+			padding-right: span(2);
+
+			&-icon {
+				width: 100%;
+
+				img {
+					padding-bottom: 2em;
+					width: 40%;
+				}
+			}
+
+			&-block {
+				float: left;
+				text-align: center;
+				width: span(33.3%);
+			}
+		}
 	}
 
 	&__sponsor-grid {

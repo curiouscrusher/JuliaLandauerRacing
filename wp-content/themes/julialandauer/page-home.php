@@ -21,8 +21,42 @@ get_header(); ?>
 
 					<div class="home-page__fast-facts">
 						<h2 class="home-page__fast-facts--title">Fast Facts</h2>
-						<img src="http://placehold.it/1200x1500">
-					</div>
+
+						<div class="home-page__fast-facts--races">
+							<div class="home-page__fast-facts--races-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/race-car.svg">
+							</div>
+							<div class="home-page__fast-facts--races-title">
+								<h2><strong>99</strong> Car Races</h2>
+							</div>
+						</div><!-- /races -->
+
+						<div class="home-page__fast-facts--championship">
+							<div class="home-page__fast-facts--championship-title">
+								<h2><strong>1</strong> Championship</h2>
+							</div>
+							<div class="home-page__fast-facts--championship-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/trophy.svg">
+							</div>
+						</div><!-- /championship -->
+
+						<div class="home-page__fast-facts--stats">
+							<div class="home-page__fast-facts--stats-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/checkered-flag.svg">
+							</div>
+							<div class="home-page__fast-facts--stats-block">
+								<h2><strong>23</strong> Wins</h2>
+							</div>
+							<div class="home-page__fast-facts--stats-block">
+								<h2><strong>37</strong> Top 3</h2>
+							</div>
+							<div class="home-page__fast-facts--stats-block">
+								<h2><strong>43</strong> Top 5</h2>
+							</div>
+
+						</div><!-- /stats -->
+						
+					</div><!-- /fast-facts -->
 
 					<div class="home-page__news">
 						<h2 class="home-page__news--title">Latest News</h2>

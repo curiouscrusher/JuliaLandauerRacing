@@ -23,6 +23,8 @@ a {
 	font-size: $body-copy;
 }
 
+strong { font-weight: $bold; }
+
 h1 { font-size: $body-copy + 3.37em; }
 
 h2 { font-size: $body-copy + 2.3em; }

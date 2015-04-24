@@ -76,32 +76,42 @@
 
 		&--block-1 {
 			@include clearfix;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			margin-bottom: 4em;
 
 			p {
 				float: left;
 				padding-left: span(1);
-				width: span(45%);
-			}
-
-			img {
-				float: right;
-				width: span(48%);
-			}
-		}
-
-		&--block-2 {
-			@include clearfix;
-
-			p {
-				float: right;
 				padding-right: span(1);
 				width: span(45%);
 			}
 
 			img {
-				float: left;
-				width: span(48%);
+				// Disabled while working with flexbox
+				//float: right;
+				//width: span(48%);
+			}
+		}
+
+		&--block-2 {
+			@include clearfix;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			p {
+				float: right;
+				padding-left: span(1);
+				padding-right: span(1);
+				width: span(45%);
+			}
+
+			img {
+				// Disabled while working with flexbox
+				//float: left;
+				//width: span(48%);
 			}
 		}
 
@@ -109,6 +119,7 @@
 		@media (max-width: 60em) {
 			&--block-1,
 			&--block-2 {
+				display: block;
 				p,
 				img {
 					width: span(100%);
