@@ -13,9 +13,7 @@ get_header(); ?>
 
 			<div class="home-page">
 
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					
+				<?php while ( have_posts() ) : the_post(); ?>					
 					
 					<?php get_template_part( 'content', 'page' ); ?>
 
@@ -23,12 +21,13 @@ get_header(); ?>
 						<h2 class="home-page__fast-facts--title">Fast Facts</h2>
 
 						<div class="home-page__fast-facts--races">
-							<div class="home-page__fast-facts--races-icon">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/race-car.svg">
-							</div>
 							<div class="home-page__fast-facts--races-title">
 								<h2><strong>99</strong> Car Races</h2>
 							</div>
+							<div class="home-page__fast-facts--races-icon">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/race-car.svg">
+							</div>
+							
 						</div><!-- /races -->
 
 						<div class="home-page__fast-facts--championship">
@@ -62,7 +61,6 @@ get_header(); ?>
 						<h2 class="home-page__news--title">Latest News</h2>
 						<?php putRevSlider(8) ?>
 					</div>
-
 
 					<div class="home-page__sponsor-grid">
 						<h2 class="home-page__sponsor-grid--title">Partners</h2>

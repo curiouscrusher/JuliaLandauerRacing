@@ -7,55 +7,41 @@
 	overflow: hidden;
 
 	&__fast-facts {
-		// color: $racing-blue;
-		// display: block;
-		// overflow: hidden;
+		background-color: $racing-blue;
+		color: $white;
 		margin-top: 2em;
 		text-align: center;
 
 		strong { font-family: $secondary-font; }
 
 		&--races, {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			// Disabled for now due to svg size
-			//margin: 8em 0;
-			overflow: hidden;
+			display: inline-block;
+			float: left;
+			margin-right: span(10%);
 			padding-left: span(2);
-			padding-right: span(2);
+			width: span(45%);
 			
 			&-icon {
-				float: left;
-				width: span(5);
+				width: span(100%);
 			}
 
 			&-title {
-				float: left;
-				width: span(5);
+				width: span(100%);
 			}
 		}
 
 		&--championship {
-			background-color: $racing-blue;
-			color: $white;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			overflow: hidden;
-			padding-top: 10em;
-			padding-bottom: 10em;
-			padding-left: span(2);
+			display: inline-block;
 			padding-right: span(2);
+			width: span(45%);
 
 			&-title {
-				float: left;
-				width: span(5);
+				width: span(100%);
 			}
 
 			&-icon {
 				float: right;
-				width: span(5);
+				width: span(100%);
 
 				img  {
 					width: 55%;
@@ -64,12 +50,11 @@
 		}
 
 		&--stats {
-			color: $racing-blue;
-			margin: 8em 0;
 			overflow: hidden;
-			width: span(100%);
+			padding-bottom: 4em;
 			padding-left: span(2);
 			padding-right: span(2);
+			width: span(100%);
 
 			&-icon {
 				width: 100%;
