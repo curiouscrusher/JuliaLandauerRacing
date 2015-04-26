@@ -4,11 +4,9 @@
 
 .home-page {
 	padding-bottom: 4em;
-	overflow: hidden;
+	overflow: auto;
 
 	&__fast-facts {
-		background-color: $racing-blue;
-		color: $white;
 		padding-top: 2em;
 		text-align: center;
 
@@ -77,7 +75,7 @@
 		}
 
 		&--stats {
-			overflow: hidden;
+			overflow: auto;
 			padding-bottom: 4em;
 			padding-left: span(2);
 			padding-right: span(2);
@@ -101,6 +99,53 @@
 					float: none;
 					margin-bottom: 2em;
 					width: span(100%);
+				}
+			}
+		}
+	}
+
+	&__team-goals {
+		overflow: auto;
+		margin-left: span(1);
+		margin-right: span(1);
+
+		h1	 {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			text-align: center;
+		}
+
+		&--item {
+			float: left;
+			margin-bottom: 4em;
+			text-align: center;
+			width: span(45%);
+
+			@media (max-width: 55em) {
+				float: none;
+				margin-bottom: 2em;
+				width: span(100%);
+			}
+
+			h2 {
+				background-color: $racing-blue;
+				border-radius: 3em;
+				color: $white;
+				display: inline-block;
+				font-family: $secondary-font;
+				font-size: 6em;
+				height: 1.5em;
+				line-height: 1.5em;
+				margin-bottom: .25em;
+				text-align: center;
+				width: 1.5em;
+
+				@media (max-width: 60em) {
+					border-radius: 2.5em;
+					font-size: 4em;
+					height: 1.75em;
+					line-height: 1.75em;
+					width: 1.75em;
 				}
 			}
 		}

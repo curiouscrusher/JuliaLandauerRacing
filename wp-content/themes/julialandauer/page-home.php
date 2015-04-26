@@ -57,6 +57,27 @@ get_header(); ?>
 						
 					</div><!-- /fast-facts -->
 
+					<div class="home-page__team-goals">
+						<h1>Team Goals</h1>
+							<div class="home-page__team-goals--item">
+								<h2>1</h2>
+								<h4><?php  echo get_post_meta($post->ID, 'goal-1', true); ?></h4>
+							</div>
+							<div class="home-page__team-goals--item">
+								<h2>2</h2>
+								<h4><?php  echo get_post_meta($post->ID, 'goal-2', true); ?></h4>
+							</div>
+							<div class="home-page__team-goals--item">
+								<h2>3</h2>
+								<h4><?php  echo get_post_meta($post->ID, 'goal-3', true); ?></h4>
+							</div>
+							<div class="home-page__team-goals--item">
+								<h2>4</h2>
+								<h4><?php  echo get_post_meta($post->ID, 'goal-4', true); ?></h4>
+							</div>
+
+					</div><!-- /team-goals -->
+
 					<div class="home-page__news">
 						<h2 class="home-page__news--title">Latest News</h2>
 						<?php putRevSlider(8) ?>
