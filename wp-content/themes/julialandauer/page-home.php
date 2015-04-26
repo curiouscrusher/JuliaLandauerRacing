@@ -18,7 +18,7 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="home-page__fast-facts">
-						<h2 class="home-page__fast-facts--title">Fast Facts</h2>
+						<h1 class="home-page__fast-facts--title">Fast Facts</h1>
 
 						<div class="home-page__fast-facts--races">
 							<div class="home-page__fast-facts--races-title">

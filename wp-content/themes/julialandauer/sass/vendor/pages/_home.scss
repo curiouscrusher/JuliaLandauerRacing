@@ -9,8 +9,14 @@
 	&__fast-facts {
 		background-color: $racing-blue;
 		color: $white;
-		margin-top: 2em;
+		padding-top: 2em;
 		text-align: center;
+
+		@media (max-width: 60em) {
+			&--title {
+				margin-bottom: .75em;
+			}
+		}
 
 		strong { font-family: $secondary-font; }
 
@@ -18,8 +24,18 @@
 			display: inline-block;
 			float: left;
 			margin-right: span(10%);
-			padding-left: span(2);
+			padding-left: span(1);
 			width: span(45%);
+
+			@media (max-width: 60em) {
+				width: span(100%);
+				margin: 0;
+				padding: 0 1.5em;
+
+				&-icon img {
+					width: span(50%);
+				}
+			}
 			
 			&-icon {
 				width: span(100%);
@@ -32,8 +48,14 @@
 
 		&--championship {
 			display: inline-block;
-			padding-right: span(2);
+			padding-right: span(1);
 			width: span(45%);
+
+			@media (max-width: 60em) {
+				width: span(100%);
+				margin: 0;
+				padding: 0 1em 8em 1em;
+			}
 
 			&-title {
 				width: span(100%);
@@ -41,10 +63,15 @@
 
 			&-icon {
 				float: right;
+				margin-top: 4em;
 				width: span(100%);
 
 				img  {
 					width: 55%;
+
+					@media (max-width: 60em) {
+						width: span(30%);
+					}
 				}
 			}
 		}
@@ -69,6 +96,12 @@
 				float: left;
 				text-align: center;
 				width: span(33.3%);
+
+				@media (max-width: 55em) {
+					float: none;
+					margin-bottom: 2em;
+					width: span(100%);
+				}
 			}
 		}
 	}
