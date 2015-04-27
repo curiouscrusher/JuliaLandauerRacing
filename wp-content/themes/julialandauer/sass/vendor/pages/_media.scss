@@ -64,7 +64,7 @@
 	}
 
 	&__photos {
-		h1 {
+		&--title {
 			text-align: center;
 		}
 	}
@@ -149,7 +149,7 @@
 			text-align: center;
 		}
 
-		&--huffington, &--featured-articles {
+		&--current, &--article-archive {
 			float: left;
 			width: span(45%);
 
@@ -168,12 +168,14 @@
 			}
 		}
 
-		&--huffington {
+		&--current {
 			margin-right: span(1);
+			text-align: center;
 		}
 
-		&--featured-articles {
+		&--article-archive {
 			clear: right;
+			text-align: center;
 		}
 	}
 	

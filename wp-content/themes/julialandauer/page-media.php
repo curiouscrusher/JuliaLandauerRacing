@@ -31,7 +31,7 @@ get_header(); ?>
 					</div>
 
 					<div class="media-page__photos">
-						<!-- <h1 class="media-page__photos--title">Photos</h1> -->
+						<h2 class="media-page__photos--title">Photos</h2>
 						<?php putRevSlider(6) ?>
 					</div>
 
@@ -59,21 +59,21 @@ get_header(); ?>
 					</div>
 
 					<div class="media-page__blocks">
-							<div class="media-page__blocks--huffington">
-								<h3>Huffington Post</h3>
+							<div class="media-page__blocks--current">
+								<h3>Current News</h3>
 									<p>
 										<!-- Load the huff post blurb -->
-										<?php  echo get_post_meta($post->ID, 'huff-post', true); ?>
+										<?php  echo get_post_meta($post->ID, 'current-news', true); ?>
 									</p>
-									<a href="#"><button>Read More</button></a>
+									<a href="<?php echo site_url(); ?>/news"><button>See More</button></a>
 							</div>
-							<div class="media-page__blocks--featured-articles">
-								<h3>Featured Articles</h3>	
+							<div class="media-page__blocks--article-archive">
+								<h3>Article Archive</h3>	
 									<p>
 										<!-- Load the media inquiry text -->
-										<?php  echo get_post_meta($post->ID, 'featured-articles', true); ?>
+										<?php  echo get_post_meta($post->ID, 'article-archive', true); ?>
 									</p>
-									<a href="<?php echo site_url(); ?>/articles"><button>Read More</button></a>
+									<a href="<?php echo site_url(); ?>/articles"><button>See More</button></a>
 							</div>
 					</div>					
 

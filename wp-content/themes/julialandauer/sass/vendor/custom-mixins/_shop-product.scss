@@ -24,6 +24,7 @@
 	&--description {
 		float: left;
 		margin-left: span(2);
+		text-align: center;
 		width: span(30%);
 
 		// Media Queries
@@ -60,6 +61,7 @@
 	&--description {
 		float: right;
 		margin-right: span(2);
+		text-align: center;
 		width: span(30%);
 
 		// Media Queries

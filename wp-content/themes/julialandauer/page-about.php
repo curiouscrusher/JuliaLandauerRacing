@@ -33,9 +33,9 @@ get_header(); ?>
 						</div>
 					</div>
 
-					<div class="about-page__hero-photo">
-							<!-- Load -->
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'history_hero', true); ?>" />
+					<div class="about-page__schedule--hero-photo">
+							<!-- Load Schedule Hero Image-->
+							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'schedule_hero', true); ?>" />
 					</div>
 
 					<div class="about-page__schedule">
