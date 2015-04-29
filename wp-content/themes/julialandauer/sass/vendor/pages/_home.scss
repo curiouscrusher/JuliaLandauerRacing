@@ -121,6 +121,9 @@
 			text-align: center;
 			width: span(45%);
 
+			// Keep #4 from jumping before 3 at certain screen sizes
+			&:nth-of-type(3) { clear: left; }
+
 			@media (max-width: 55em) {
 				float: none;
 				margin-bottom: 2em;
