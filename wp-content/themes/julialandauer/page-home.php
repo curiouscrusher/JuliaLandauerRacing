@@ -86,12 +86,12 @@ get_header(); ?>
 					<div class="home-page__sponsor-grid">
 						<h2 class="home-page__sponsor-grid--title">Partners</h2>
 							<!-- Sponsor Logo Grid -->
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-1', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-2', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-3', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-4', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-5', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-6', true); ?>" class="partners-page__sponsor-grid--logo" />
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-1-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-1', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-2-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-2', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-3-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-3', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-4-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-4', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-5-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-5', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-6-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-6', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
 					</div>
 
 				<?php endwhile; // end of the loop. ?>
