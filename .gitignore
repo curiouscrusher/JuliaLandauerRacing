@@ -1,4 +1,6 @@
 ### Wordpress Files ###
+license.txt
+readme.html
 wp-admin/
 wp-includes/
 wp-content/plugins/hello.php
