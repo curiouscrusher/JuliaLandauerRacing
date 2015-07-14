@@ -2,6 +2,12 @@
 >>> Home Page
 --------------------------------------------------------------*/
 
+.home {
+	.slider-button {
+		@include primary-cta-btn($text-color: $white, $btn-border: $white, $hover-color: lighten($racing-blue, 20), $font-size: 1em);
+	}
+}
+
 .home-page {
 	padding-bottom: 4em;
 	overflow: auto;
@@ -119,7 +125,7 @@
 			float: left;
 			margin-bottom: 4em;
 			text-align: center;
-			width: span(45%);
+			width: span(50%);
 
 			// Keep #4 from jumping before 3 at certain screen sizes
 			&:nth-of-type(3) { clear: left; }
