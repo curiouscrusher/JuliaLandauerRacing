@@ -26,6 +26,16 @@ get_header(); ?>
 
 										<button>Order Now</button>
 									</p>
+
+									<div class="shop-page__hero-card-order-instructions">
+										<p>
+											For signed herocards, please send a self-address and stamped envelope ($1.25 in postage) to:
+											Julia Landauer Racing
+											421 8th Ave.
+											PO Box 8186
+											New York, NY 10116
+										</p>
+									</div>
 								</div>
 
 									<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'shop-page-hero-card-front', true); ?>" class="shop-page__hero-card--image" />
