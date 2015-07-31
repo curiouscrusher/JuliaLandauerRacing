@@ -51,6 +51,7 @@ gulp.task('watch', function() {
 
     // Live Reload
     gulp.watch(config.css_dir + '/style.css', lr.changed);
+    gulp.watch(config.package + '/*.php', lr.changed);
     gulp.watch(config.js_dir + '/*.js', lr.changed);
 });
 
