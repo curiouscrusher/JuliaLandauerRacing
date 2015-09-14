@@ -32,7 +32,7 @@ get_header(); ?>
 
 						<div class="home-page__fast-facts--championship">
 							<div class="home-page__fast-facts--championship-title">
-								<h2><strong>1</strong> Championship</h2>
+								<h2><strong>2</strong> Championship</h2>
 							</div>
 							<div class="home-page__fast-facts--championship-icon">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/trophy.svg">
