@@ -35,7 +35,7 @@ get_header(); ?>
 
 					<div class="about-page__schedule--hero-photo">
 							<!-- Load Schedule Hero Image-->
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'schedule_hero', true); ?>" />
+							<?php echo do_shortcode('[rev_slider about-full-section]'); ?>
 					</div>
 
 					<div class="about-page__schedule">

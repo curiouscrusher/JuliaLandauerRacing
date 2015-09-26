@@ -61,14 +61,15 @@
 		}
 
 		&--hero-photo {
-			max-height: 500px;
+			max-height: 950px;
 			overflow: hidden;
 			width: span(100%);
 
-			img {
-				height: auto;
-				width: span(100%);
-			}
+			// Removed to place slider here instead
+			// img {
+			// 	height: auto;
+			// 	width: span(100%);
+			// }
 		}
 
 		h2 {
