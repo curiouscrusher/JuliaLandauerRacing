@@ -2,6 +2,8 @@
 	@extend .partners-page__reasons;
 	background-color: $white;
 	color: $tire-black;
+	max-width: 80em;
+	margin: 0 auto 1em;
 
 	&--title {
 		padding-bottom: .5em;
