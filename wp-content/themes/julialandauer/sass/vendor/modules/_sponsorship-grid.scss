@@ -1,0 +1,21 @@
+.module__sponsor-grid {
+	@extend .partners-page__reasons;
+	background-color: $white;
+	color: $tire-black;
+
+	&--title {
+		padding-bottom: .5em;
+		text-align: center;
+	}
+
+	&--logo {
+		float: left;
+		margin-bottom: 2em;
+		width: span(33%);
+
+		@media (max-width: 60em) {
+			width: span(50%);
+			margin-bottom: 1.5em;
+		}
+	}
+}

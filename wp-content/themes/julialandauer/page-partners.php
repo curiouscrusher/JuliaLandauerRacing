@@ -37,16 +37,8 @@ get_header(); ?>
 							</div>
 					</div>
 
-					<div class="partners-page__sponsor-grid">
-						<h2 class="partners-page__sponsor-grid--title">Partners</h2>
-							<!-- Load -->
-							<a href="<?php  echo get_post_meta($post->ID, 'partners-1-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-1', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
-							<a href="<?php  echo get_post_meta($post->ID, 'partners-2-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-2', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
-							<a href="<?php  echo get_post_meta($post->ID, 'partners-3-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-3', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
-							<a href="<?php  echo get_post_meta($post->ID, 'partners-4-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-4', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
-							<a href="<?php  echo get_post_meta($post->ID, 'partners-5-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-5', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
-							<a href="<?php  echo get_post_meta($post->ID, 'partners-6-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-6', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
-					</div>
+					<?php // Sponsor Grid ?>
+					<?php get_template_part( 'modules/sponsorship-grid' ); ?>
 
 					<div class="partners-page__actions">
 							<div class="partners-page__actions--partner-with-julia">

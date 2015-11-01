@@ -163,15 +163,6 @@
 		}
 	}
 
-		&__sponsor-grid {
-			@extend .partners-page__sponsor-grid;
-
-			&--title {
-				text-align: center;
-				padding-bottom: .75em;
-			}
-		}
-
 		&__news {
 			background-color: $racing-blue;
 			
