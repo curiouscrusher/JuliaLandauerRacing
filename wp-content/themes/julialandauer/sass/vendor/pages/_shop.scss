@@ -20,6 +20,30 @@
 			@include center-block;
 			margin-top: 2em;
 		}
+
+		&-order-instructions {
+			border: 1px solid $racing-blue;
+			display: none;
+			padding: 0 2em;
+			position: relative;
+
+			&:before {
+			    backface-visibility: hidden;
+			    background-color: $white;
+			    content:'';
+			    height: 25px;
+			    width: 25px;
+			    left: 0;
+			    margin: auto;
+			    margin-top: 1px/1.414213562; // sqrt(2)
+			    position: absolute;
+			    right: 0;
+			    top: 0;
+			    transform: translateY(-50%) rotate(45deg);
+			    border-left: inherit;
+			    border-top: inherit;
+			}
+		}
 	}
 
 	&__water-bottle {

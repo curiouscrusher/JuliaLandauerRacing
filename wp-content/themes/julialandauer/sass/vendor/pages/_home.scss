@@ -2,7 +2,16 @@
 >>> Home Page
 --------------------------------------------------------------*/
 
-.home-page {
+.home {
+
+	.slider-button {
+		@include primary-cta-btn($text-color: $white, $btn-border: $white, $hover-color: lighten($racing-blue, 20), $font-size: 1em);
+		border-radius: 0;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+
+	&-page {
 	padding-bottom: 4em;
 	overflow: auto;
 
@@ -119,7 +128,7 @@
 			float: left;
 			margin-bottom: 4em;
 			text-align: center;
-			width: span(45%);
+			width: span(50%);
 
 			// Keep #4 from jumping before 3 at certain screen sizes
 			&:nth-of-type(3) { clear: left; }
@@ -154,30 +163,31 @@
 		}
 	}
 
-	&__sponsor-grid {
-		@extend .partners-page__sponsor-grid;
+		&__sponsor-grid {
+			@extend .partners-page__sponsor-grid;
 
-		&--title {
-			text-align: center;
-			padding-bottom: .75em;
+			&--title {
+				text-align: center;
+				padding-bottom: .75em;
+			}
 		}
-	}
 
-	&__news {
-		background-color: $racing-blue;
-		
+		&__news {
+			background-color: $racing-blue;
+			
 
-		// .large_bold_white {
-		// 	border-bottom: 2px solid $racing-blue !important;
-		// 	overflow: hidden;
-		// 	padding-bottom: 2em;
-		// 	min-height: 60px;
-		// }
+			// .large_bold_white {
+			// 	border-bottom: 2px solid $racing-blue !important;
+			// 	overflow: hidden;
+			// 	padding-bottom: 2em;
+			// 	min-height: 60px;
+			// }
 
-		&--title {
-			color: $white;
-			padding-top: 1em;
-			text-align: center;
+			&--title {
+				color: $white;
+				padding-top: 1em;
+				text-align: center;
+			}
 		}
 	}
 }

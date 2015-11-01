@@ -163,11 +163,28 @@
 				}
 			}
 
+			.speaking-captcha {
+				// @include center-block;
+				@include form-box($box-padding: 1.5em 1em, $box-width: 50%);
+				float: left;
+				margin-bottom: 2em;
+				// margin-top: 2em;
+				width: 50%;
+
+				@media (max-width: 60em) {
+
+					input {
+						width: span(70%);
+					}
+				}
+			}
+
 
 			&-submit {
 				// Use px value font size to solve bug
 				@include center-block;
 				@include primary-cta-btn ($background-color: $racing-blue, $text-color: $white, $font-size: 20px);
+				clear: both;
 			}
 		}
 	}

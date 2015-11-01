@@ -135,6 +135,9 @@ function julialandauer_scripts() {
 
 	wp_enqueue_script('picturefill', get_template_directory_uri() . '/js/picturefill.min.js', array(), '2.0.0', true );
 
+	// Custom scripts
+	wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

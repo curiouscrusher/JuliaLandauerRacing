@@ -22,7 +22,7 @@ get_header(); ?>
 
 						<div class="home-page__fast-facts--races">
 							<div class="home-page__fast-facts--races-title">
-								<h2><strong>99</strong> Car Races</h2>
+								<h2><strong><?php  echo get_post_meta($post->ID, 'home-total-races', true); ?></strong> Car Races</h2>
 							</div>
 							<div class="home-page__fast-facts--races-icon">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/race-car.svg">
@@ -44,13 +44,13 @@ get_header(); ?>
 								<img src="<?php echo get_template_directory_uri(); ?>/images/checkered-flag.svg">
 							</div>
 							<div class="home-page__fast-facts--stats-block">
-								<h2><strong>23</strong> Wins</h2>
+								<h2><strong><?php  echo get_post_meta($post->ID, 'home-total-wins', true); ?></strong> Wins</h2>
 							</div>
 							<div class="home-page__fast-facts--stats-block">
-								<h2><strong>37</strong> Top 3</h2>
+								<h2><strong><?php  echo get_post_meta($post->ID, 'home-top-3', true); ?></strong> Top 3</h2>
 							</div>
 							<div class="home-page__fast-facts--stats-block">
-								<h2><strong>43</strong> Top 5</h2>
+								<h2><strong><?php  echo get_post_meta($post->ID, 'home-top-5', true); ?></strong> Top 5</h2>
 							</div>
 
 						</div><!-- /stats -->
@@ -86,12 +86,12 @@ get_header(); ?>
 					<div class="home-page__sponsor-grid">
 						<h2 class="home-page__sponsor-grid--title">Partners</h2>
 							<!-- Sponsor Logo Grid -->
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-1', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-2', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-3', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-4', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-5', true); ?>" class="partners-page__sponsor-grid--logo" />
-							<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-6', true); ?>" class="partners-page__sponsor-grid--logo" />
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-1-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-1', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-2-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-2', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-3-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-3', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-4-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-4', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-5-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-5', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
+							<a href="<?php  echo get_post_meta($post->ID, 'partners-6-link', true); ?>" target="blank"><img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'partners-6', true); ?>" class="partners-page__sponsor-grid--logo" /></a>
 					</div>
 
 				<?php endwhile; // end of the loop. ?>
