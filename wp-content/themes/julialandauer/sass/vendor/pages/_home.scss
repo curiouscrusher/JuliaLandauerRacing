@@ -16,6 +16,8 @@
 	overflow: auto;
 
 	&__fast-facts {
+		margin: 0 auto;
+		max-width: 80em;
 		padding-top: 2em;
 		text-align: center;
 
@@ -30,9 +32,9 @@
 		&--races, {
 			display: inline-block;
 			float: left;
-			margin-right: span(10%);
-			padding-left: span(1);
-			width: span(45%);
+			// margin-right: span(20%);
+			margin-left: span(10%);
+			width: span(35%);
 
 			@media (max-width: 60em) {
 				width: span(100%);
@@ -45,6 +47,7 @@
 			}
 			
 			&-icon {
+				margin-top: 6em;
 				width: span(100%);
 			}
 
@@ -55,8 +58,8 @@
 
 		&--championship {
 			display: inline-block;
-			padding-right: span(1);
-			width: span(45%);
+			// padding-right: span(1);
+			width: span(35%);
 
 			@media (max-width: 60em) {
 				width: span(100%);
@@ -91,7 +94,8 @@
 			width: span(100%);
 
 			&-icon {
-				width: 100%;
+				margin: 0 auto;
+				width: 70%;
 
 				img {
 					padding-bottom: 2em;
@@ -115,8 +119,8 @@
 
 	&__team-goals {
 		overflow: auto;
-		margin-left: span(1);
-		margin-right: span(1);
+		margin: 0 auto;
+		max-width: 80em;
 
 		h1	 {
 			margin-top: 1em;
@@ -137,6 +141,10 @@
 				float: none;
 				margin-bottom: 2em;
 				width: span(100%);
+			}
+
+			@media (min-width: 75em) {
+				padding: 0 6em;
 			}
 
 			h2 {
@@ -162,15 +170,6 @@
 			}
 		}
 	}
-
-		&__sponsor-grid {
-			@extend .partners-page__sponsor-grid;
-
-			&--title {
-				text-align: center;
-				padding-bottom: .75em;
-			}
-		}
 
 		&__news {
 			background-color: $racing-blue;

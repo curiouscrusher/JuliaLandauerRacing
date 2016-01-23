@@ -27,13 +27,17 @@
 		text-align: center;
 		width: span(30%);
 
+		h4 {
+			color: lighten($track-gray, 20);
+		}
+
 		// Media Queries
 		@media (max-width: 60em) {
 			float: none;
 			margin: 0 0 2em 0;
 			width: span(100%);
 
-			h2 {
+			h3 {
 				text-align: center;
 			}
 		}
@@ -64,13 +68,17 @@
 		text-align: center;
 		width: span(30%);
 
+		h4 {
+			color: lighten($track-gray, 20);
+		}
+
 		// Media Queries
 		@media (max-width: 60em) {
 			float: none;
 			margin: 0 0 2em 0;
 			width: span(100%);
 
-			h2 {
+			h3 {
 				text-align: center;
 			}
 		}
