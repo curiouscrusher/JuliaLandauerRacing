@@ -5,14 +5,14 @@
 // Susy Magic Grids
 @import "susy/susy";
 
+// Custom Mixins Seperated From Underscores For Modularity
+@import "custom-mixins/custom-mixins";
+
 // Site Design Partials - Keep First
 @import "design/design";
 
 // Site Module Partials
 @import "modules/modules";
-
-// Custom Mixins Seperated From Underscores For Modularity
-@import "custom-mixins/custom-mixins";
 
 // Page Partials
 @import "pages/pages";

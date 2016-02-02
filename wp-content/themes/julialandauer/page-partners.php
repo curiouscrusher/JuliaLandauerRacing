@@ -19,6 +19,9 @@ get_header(); ?>
 					
 					<?php get_template_part( 'content', 'page' ); ?>
 
+					<?php // Sponsor Grid ?>
+					<?php get_template_part( 'modules/sponsorship-grid' ); ?>
+
 					<div class="partners-page__reasons">
 						<h2 class="partners-page__reasons--title">Learn More About Partnering With Julia</h2>
 							<div class="partners-page__reasons--meaning">
@@ -36,9 +39,6 @@ get_header(); ?>
 									</p>
 							</div>
 					</div>
-
-					<?php // Sponsor Grid ?>
-					<?php get_template_part( 'modules/sponsorship-grid' ); ?>
 
 					<div class="partners-page__actions">
 							<div class="partners-page__actions--partner-with-julia">

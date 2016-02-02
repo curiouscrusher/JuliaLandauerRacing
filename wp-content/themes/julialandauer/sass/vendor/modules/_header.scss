@@ -6,7 +6,7 @@
 	float: left;
 	width: span(8);
 	margin-left: span(1);
-	margin-top: 2em;
+	margin-top: .5em;
 
 	li {
 		padding-right: 3em;
@@ -21,6 +21,30 @@
 			&:hover {
 				color: darken($racing-blue, 10%);
 			}
+		}
+	}
+}
+
+.floating-social {
+	cursor: pointer;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9999999;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	& > a {
+		color: $white;
+		background-color: $racing-blue;
+		float: left;
+		clear: left;
+		padding: .75em;
+
+		&:hover {
+			background-color: lighten( $racing-blue, 10 );
 		}
 	}
 }

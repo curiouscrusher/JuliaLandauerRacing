@@ -90,3 +90,9 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+  <div class="floating-social">
+    <a class="icon-facebook" href="http://www.facebook.com/julialandauerracing" target="_blank"></a>
+    <a class="icon-twitter" href="http://www.twitter.com/julialandauer" target="_blank"></a>
+    <a class="icon-instagram" href="http://instagram.com/julialandauer" target="_blank"></a>
+    <a class="icon-youtube" href="https://www.youtube.com/user/julialandauer" target="_blank"></a>
+  </div>

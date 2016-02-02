@@ -57,7 +57,7 @@ get_header(); ?>
 						
 					</div><!-- /fast-facts -->
 
-					<div class="home-page__team-goals">
+					<div class="home-page__team-goals edge--top edge--bottom--reverse">
 						<h1>Team Goals</h1>
 							<div class="home-page__team-goals--item">
 								<h2>1</h2>
@@ -77,11 +77,6 @@ get_header(); ?>
 							</div>
 
 					</div><!-- /team-goals -->
-
-					<div class="home-page__news">
-						<h2 class="home-page__news--title">Latest News</h2>
-						<?php putRevSlider(8) ?>
-					</div>
 
 					<?php // Sponsor Grid ?>
 					<?php get_template_part( 'modules/sponsorship-grid' ); ?>

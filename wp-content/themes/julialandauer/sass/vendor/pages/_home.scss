@@ -13,10 +13,10 @@
 
 	&-page {
 	padding-bottom: 4em;
-	overflow: auto;
+	// overflow: auto;
 
 	&__fast-facts {
-		margin: 0 auto;
+		margin: 0 auto 2em;
 		max-width: 80em;
 		padding-top: 2em;
 		text-align: center;
@@ -118,9 +118,13 @@
 	}
 
 	&__team-goals {
-		overflow: auto;
-		margin: 0 auto;
-		max-width: 80em;
+		background-color: $racing-blue;
+		// overflow: auto;
+		color: $white;
+		height: auto;
+		display: inline-block;
+		margin: 0 auto 2em;
+		width: 100%;
 
 		h1	 {
 			margin-top: 1em;
@@ -148,9 +152,9 @@
 			}
 
 			h2 {
-				background-color: $racing-blue;
+				background-color: $white;
 				border-radius: 3em;
-				color: $white;
+				color: $racing-blue;
 				display: inline-block;
 				font-family: $secondary-font;
 				font-size: 6em;

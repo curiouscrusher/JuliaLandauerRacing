@@ -77,7 +77,7 @@
 		&--block-1 {
 			@include clearfix;
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: center;
 			margin-bottom: 4em;
 
@@ -98,7 +98,7 @@
 		&--block-2 {
 			@include clearfix;
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: center;
 
 			p {
