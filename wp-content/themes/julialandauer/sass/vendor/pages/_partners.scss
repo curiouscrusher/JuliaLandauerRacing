@@ -6,11 +6,13 @@
 
 	&__reasons {
 		clear: both;
+		display: inline-block;
 		margin-bottom: 1em;
 		padding-left: span(1);
 		padding-right: span(1);
 		padding-top: 2em;
-		overflow: hidden;
+		width: 100%;
+		// overflow: hidden;
 		// Removed padding as long as
 		// above grid is calculated with it
 		// padding: 0 3em 3em 3em;

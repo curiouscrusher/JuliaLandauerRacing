@@ -8,11 +8,13 @@
 		background-color: $racing-blue;
 		color: $white;
 		clear: both;
-		padding-bottom: 4em;
+		display: inline-block;
+		padding-bottom: 1em;
 		padding-left: span(1);
 		padding-right: span(1);
 		padding-top: 2em;
-		overflow: hidden;
+		width: 100%;
+		// overflow: hidden;
 		//padding: 3em;
 
 		@media (max-width: 60em) {
@@ -116,6 +118,7 @@
 		background: $racing-blue;
 		color: $white;
 		display: block;
+		margin-bottom: 0;
 		text-align: center;
 	}
 }

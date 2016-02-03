@@ -38,7 +38,7 @@ get_header(); ?>
 							<?php echo do_shortcode('[rev_slider about-full-section]'); ?>
 					</div>
 
-					<div class="about-page__schedule">
+					<div class="about-page__schedule" id="schedule">
 					<h2>Upcoming Schedule</h2>
 
 						<!-- Load The Schedule -->
@@ -50,7 +50,7 @@ get_header(); ?>
 						?>
 					</div>
 
-					<div class="about-page__stats">
+					<div class="about-page__stats edge--top">
 					<h2>Julia's Statistics</h2>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/stats-1.png">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/stats-2.png">

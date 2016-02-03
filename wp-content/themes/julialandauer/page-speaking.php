@@ -14,8 +14,6 @@ get_header(); ?>
 			<div class="speaking-page">
 
 				<?php while ( have_posts() ) : the_post(); ?>
-
-					
 					
 					<?php get_template_part( 'content', 'page' ); ?>
 
@@ -35,6 +33,14 @@ get_header(); ?>
 									<p>
 										<!-- Load the speaking text -->
 										<?php  echo get_post_meta($post->ID, 'speaking-branding', true); ?>
+									</p>
+							</div>
+							<div class="speaking-page__topics--mindsets">
+								<h1>3</h1>
+								<h4>Habits &amp; Mindsets of Successful People</h4>	
+									<p>
+										<!-- Load the speaking text -->
+										<?php  echo get_post_meta($post->ID, 'speaking-mindsets', true); ?>
 									</p>
 							</div>
 					</div>

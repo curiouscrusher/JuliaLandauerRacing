@@ -40,7 +40,7 @@ get_header(); ?>
 							</div>
 					</div>
 
-					<div class="partners-page__actions">
+					<div class="partners-page__actions edge--top edge--bottom--reverse">
 							<div class="partners-page__actions--partner-with-julia">
 								<h3 class="partners-page__actions--title">Want To Partner With Julia?</h3>	
 									<p>
