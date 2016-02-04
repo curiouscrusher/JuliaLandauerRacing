@@ -3,11 +3,16 @@
 ----------------------------------------------------------------*/
 
 // Merged Font Imports
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Quattrocento+Sans:400,700),
- url(http://fonts.googleapis.com/css?family=Play:700),
- url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+// @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700),url(https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700), url(http://fonts.googleapis.com/css?family=Play:700), url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
 
 @include font-face(icomoon, fonts/icomoon/icomoon);
+@include font-face('Play', fonts/play/play-regular, 400, normal, ttf);
+@include font-face('Play', fonts/play/play-bold, 800, normal, ttf);
+@include font-face('Quattrocento Sans', fonts/quattrocento-sans/quattrocentosans-regular, 400, normal, ttf);
+@include font-face('Quattrocento Sans', fonts/quattrocento-sans/quattrocentosans-bold, 800, normal, ttf);
+@include font-face('Roboto Slab', fonts/roboto-slab/robotoslab-thin, 100, normal, ttf);
+@include font-face('Roboto Slab', fonts/roboto-slab/robotoslab-regular, 400, normal, ttf);
+@include font-face('Roboto Slab', fonts/roboto-slab/robotoslab-bold, 800, normal, ttf);
 
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
