@@ -144,9 +144,37 @@
 
 	&__blocks {
 		@extend .media-page__youtube-wrapper;
+		padding-top: 0;
 
 		h2 {
 			text-align: center;
+		}
+
+		&--latest {
+			margin: 0 auto 4em;
+			
+
+			@media (min-width: 40em) {
+				max-width: 600px;
+				width: span(60%);
+			}
+
+			h5 {
+				text-align: center;
+			}
+
+			p {
+				font-size: 1em;
+				margin-bottom: 0;
+			}
+
+			article {
+				padding-bottom: 2em;
+			}
+
+			.read-more {
+				font-size: 1em;
+			}
 		}
 
 		&--current, &--article-archive {

@@ -182,3 +182,13 @@ function my_login_logo() { ?>
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+// Get rid of brackets in the excerpt
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+add_filter('excerpt_length', 'my_excerpt_length');
+function my_excerpt_length($length) {
+return 25; }
