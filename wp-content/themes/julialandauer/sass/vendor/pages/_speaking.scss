@@ -55,11 +55,20 @@
 
 	&__previous {
 		margin: 4em auto 0;
-		max-width: 600px;
+		max-width: 1200px;
+		overflow: auto;
 		text-align: center;
 		width: 100%;
 
-		> ul {
+		&--column {
+			width: 100%;
+
+			@media (min-width: 60em) {
+				float: left;
+				width: 50%;
+			}
+
+			> ul {
 			list-style: none;
 			margin: 0;
 			padding: 0;
@@ -68,6 +77,7 @@
 				font-size: 18px;
 				padding: .5em 0;
 			}
+		}
 		}
 	}
 
