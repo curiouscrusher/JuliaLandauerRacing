@@ -53,6 +53,24 @@
 		}
 	}
 
+	&__previous {
+		margin: 4em auto 0;
+		max-width: 600px;
+		text-align: center;
+		width: 100%;
+
+		> ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			> li {
+				font-size: 18px;
+				padding: .5em 0;
+			}
+		}
+	}
+
 	&__video-feature {
 		@extend .speaking-page__topics;
 		margin-top: 4em;

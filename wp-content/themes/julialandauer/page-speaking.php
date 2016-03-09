@@ -49,6 +49,23 @@ get_header(); ?>
 						<?php putRevSlider(11) ?>
 					</div>	
 
+					<div class="speaking-page__previous">
+						<h3>Previous Speaking Clients</h3>
+						<ul>
+							<li>2016 IRC Summit, Presented by Elite Consulting Pro</li>
+							<li>INBOUND 2015</li>
+							<li>TEDxStanford</li>
+							<li>Kansas State University</li>
+							<li>ICAN Women's Leadership Conference</li>
+							<li>Apple Store SF</li>
+							<li>Meet the Innovators: Brand Builders</li>
+							<li>Notre Dame High School for Girls</li>
+							<li>Marymount School of New York</li>
+							<li>Chabot Science Center</li>
+							<li>Project Scientist</li>
+						</ul>
+					</div>
+
 					<div class="speaking-page__video-feature">
 						<div class="speaking-page__video-feature--left-block">
 							<h4><?php  echo get_post_meta($post->ID, 'speaking-video-left-title', true); ?></h4>
