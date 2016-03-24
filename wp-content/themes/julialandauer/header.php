@@ -70,6 +70,10 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
+<div class="announcement-bar">
+  <h5>Irwindale Speedway race will be televised on Friday, March 25 at 9 pm EST on NBCSN</h5>
+</div>
+
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

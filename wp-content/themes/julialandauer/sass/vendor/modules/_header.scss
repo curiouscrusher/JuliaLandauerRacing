@@ -2,6 +2,14 @@
 >>> Header
 --------------------------------------------------------------*/
 
+.announcement-bar {
+	background-color: $racing-blue;
+	color: $white;
+	padding: .75em .5em;
+	text-align: center;
+	width: 100%;
+}
+
 .main-navigation {
 	float: left;
 	width: span(8);
