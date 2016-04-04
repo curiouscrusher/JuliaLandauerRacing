@@ -70,9 +70,9 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-<!-- <div class="announcement-bar">
-  <h5></h5>
-</div> -->
+<div class="announcement-bar">
+  <h5>The NASCAR K&amp;N Pro Series West race from Kern County Raceway will be broadcast on NBCSN on Friday, April 8, 2016 at 11 pm EST. </h5>
+</div>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
