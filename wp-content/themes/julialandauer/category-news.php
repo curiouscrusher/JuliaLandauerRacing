@@ -19,25 +19,25 @@ get_header(); ?>
 
         <?php if (have_posts()) : ?>
 
-          <div class="articles-page-wrapper">
-
           <?php while (have_posts()) : the_post(); ?> 
 
-              <div class="articles-page__post">
+            <div class="articles-page-wrapper">
 
-              <a href="<?php the_permalink(); ?>" class="articles-page__post--title"><h4><?php the_title(); ?></h4></a>
-              <?php the_excerpt(); ?>
-              <a href="<?php the_permalink(); ?>" class="articles-page__post--button">Read More</a>
+                <div class="articles-page__post">
 
-              </div>
+                <a href="<?php the_permalink(); ?>" class="articles-page__post--title"><h4><?php the_title(); ?></h4></a>
+                <?php the_excerpt(); ?>
+                <a href="<?php the_permalink(); ?>" class="articles-page__post--button">Read More</a>
 
-              <div class="articles-page__image">
-                <?php the_post_thumbnail(); ?>
-              </div>
+                </div>
+
+                <div class="articles-page__image">
+                  <?php the_post_thumbnail(); ?>
+                </div>
+
+            </div>
 
           <?php endwhile ?>
-
-          </div>
 
         <?php endif ?>
         
