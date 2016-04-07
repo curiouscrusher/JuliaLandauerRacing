@@ -113,19 +113,17 @@ get_header(); ?>
 									<p>
 										<!-- Load the hero card text -->
 										<?php  echo get_post_meta($post->ID, 'hero-card-text', true); ?>
-
-										<button onclick="toggle_visibility('instructions');">Order Now</button>
 									</p>
 
-									<div class="shop-page__hero-card-order-instructions" id="instructions">
-										<p>
-											For signed herocards, please send a self-address and stamped envelope ($1.25 in postage) to:
-											Julia Landauer Racing
-											421 8th Ave.
-											PO Box 8186
-											New York, NY 10116
-										</p>
-									</div>
+									<!-- Disassembled PayPal buttons for better styling -->
+										<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+											<input type="hidden" name="cmd" value="_s-xclick">
+											<input type="hidden" name="hosted_button_id" value="R56BY383WPNYN">
+												<button>
+													<input type="submit" value="Order Now" border="0" name="submit" alt="">
+												</button>
+											<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+										</form>
 								</div>
 
 									<img src="<?php echo site_url(); ?>/wp-content/uploads/<?php  echo get_post_meta($post->ID, 'shop-page-hero-card-front', true); ?>" class="shop-page__hero-card--image" />

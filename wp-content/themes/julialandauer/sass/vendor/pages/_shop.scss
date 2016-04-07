@@ -18,6 +18,7 @@
 		button {
 			@include primary-cta-btn($font-size: 1em);
 			@include center-block;
+			@include paypal-btn;
 			margin-top: 2em;
 		}
 
