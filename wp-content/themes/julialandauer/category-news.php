@@ -25,14 +25,14 @@ get_header(); ?>
 
                 <div class="articles-page__post">
 
-                <a href="<?php the_permalink(); ?>" class="articles-page__post--title"><h4><?php the_title(); ?></h4></a>
+                <a href="<?php the_permalink(); ?>" class="articles-page__post--title"><?php the_title(); ?></a>
                 <?php the_excerpt(); ?>
                 <a href="<?php the_permalink(); ?>" class="articles-page__post--button">Read More</a>
 
                 </div>
 
                 <div class="articles-page__image">
-                  <?php the_post_thumbnail(); ?>
+                  <?php the_post_thumbnail('articles-featured'); ?>
                 </div>
 
             </div>

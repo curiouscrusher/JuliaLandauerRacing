@@ -8,11 +8,15 @@
   &-wrapper {
     display: flex;
     flex-wrap: wrap;
+    max-height: 300px;
+
+    @media (max-width: 60em) {
+      max-height: 550px;
+    }
 
     @media (min-width: 60em) {
 
       &:nth-of-type(odd) {
-
         .articles-page__image {
           order: 1;
         }
@@ -28,27 +32,42 @@
     background-color: $racing-blue;
     color: $white;
     flex: 100%;
-    // padding: 1em 3em;
+    padding: 1.5em 3em;
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 
     @media (min-width: 60em) {
       flex: 50%;
     }
 
     &--title {
+      color: $white;
+      font-family: $secondary-font;
+      font-size: 1.75rem;
 
-      h4 {
+      &:visited {
+        // Fix for disappearing title on bg for visited link
         color: $white;
-        font-family: $secondary-font;
       }
     }
 
     > p {
       font-size: 16px;  
+      margin: 0;
     }
   }
 
   &__image {
     flex: 100%;
+    max-height: 300px;
+    overflow: hidden;
+
+    > img {
+      max-width: 985px;
+      min-width: 985px;
+    }
 
     @media (min-width: 60em) {
       flex: 50%;
