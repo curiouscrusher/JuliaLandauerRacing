@@ -13,6 +13,8 @@ get_header(); ?>
 
       <div class="articles-page">
 
+      <?php wp_nav_menu( array( 'theme_location' => 'pr_menu' ) ); ?>
+
         <?php
         query_posts('cat=3');
         ?>
@@ -32,7 +34,14 @@ get_header(); ?>
                 </div>
 
                 <div class="articles-page__image">
-                  <?php the_post_thumbnail('articles-featured'); ?>
+                  <?php if ( has_post_thumbnail() ) {
+                    the_post_thumbnail( 'articles-featured' );
+                  }
+                  else { ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/article-no-image.svg">
+                  <?php
+                  }
+                  ?>
                 </div>
 
             </div>
