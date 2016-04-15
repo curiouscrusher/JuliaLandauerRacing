@@ -16,7 +16,7 @@ get_header(); ?>
       <?php wp_nav_menu( array( 'theme_location' => 'pr_menu' ) ); ?>
 
         <?php
-        query_posts('cat=7');
+        query_posts('cat=6');
         ?>
 
         <?php if (have_posts()) : ?>
