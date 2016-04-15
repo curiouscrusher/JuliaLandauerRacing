@@ -5,31 +5,6 @@
 .articles-page {
   width: 100%;
 
-  .menu-pr-menu-container {
-    display: flex;
-    justify-content: center;
-    margin: 2em 0;
-
-    #menu-pr-menu {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      width: 50%;
-
-      > li > a {
-        color: darken($track-gray, 20);
-      }
-
-      .current-menu-item {
-        font-weight: $bold;
-      }
-    }
-  }
-
   &-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -85,13 +60,21 @@
   }
 
   &__image {
+    background-color: #eeeeee;
     flex: 100%;
     max-height: 300px;
     overflow: hidden;
 
     > img {
-      max-width: 985px;
-      min-width: 985px;
+      min-width: 130vw;
+
+      @media (min-width: 50em) {
+        min-width: 985px;
+      }
+    }
+
+    .no-image {
+      min-width: 100%;
     }
 
     @media (min-width: 60em) {

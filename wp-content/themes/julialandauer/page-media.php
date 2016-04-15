@@ -12,6 +12,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="media-page">
+
+			<?php wp_nav_menu( array( 'theme_location' => 'pr_menu' ) ); ?>
 					
 					<?php get_template_part( 'content', 'page' ); ?>
 

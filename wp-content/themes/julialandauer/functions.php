@@ -194,4 +194,4 @@ add_filter('excerpt_length', 'my_excerpt_length');
 function my_excerpt_length($length) {
 return 25; }
 
-add_image_size( 'articles-featured', 985, 400 );
+add_image_size( 'articles-featured', 985, 400, true );
