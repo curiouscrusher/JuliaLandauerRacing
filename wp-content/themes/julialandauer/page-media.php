@@ -41,53 +41,6 @@ get_header(); ?>
 					</div>
 
 					<div class="media-page__blocks">
-					
-						<div class="media-page__blocks--latest">
-							<h3>Latest</h3>
-							<?php
-										// Query the photos post type to load the 3 most recent photos
-								    $args = array(
-								        'category_name' => 'news',
-								        'posts_per_page' => 3,
-								        'orderby' => 'DESC'
-								    );
-								    $the_query = new WP_Query( $args );
-										?>
-
-										<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-										<article>
-											<a href="<?php the_permalink(); ?>">
-											<h5><?php the_title() ?></h5>
-											</a>
-											<?php the_excerpt() ?><a class="read-more" href="<?php the_permalink(); ?>">
-											Read More
-											</a>
-										</article>
-
-										<?php endwhile; else : ?>
-
-										<p>No Posts Found</p>
-
-									<?php endif; wp_reset_postdata(); ?>
-							</div>
-							<div class="media-page__blocks--current">
-								<h3>Current News</h3>
-									<p>
-										<!-- Load the huff post blurb -->
-										<?php  echo get_post_meta($post->ID, 'current-news', true); ?>
-									</p>
-									<a href="<?php echo site_url(); ?>/news"><button>See More</button></a>
-							</div>
-							<div class="media-page__blocks--article-archive">
-								<h3>Article Archive</h3>	
-									<p>
-										<!-- Load the media inquiry text -->
-										<?php  echo get_post_meta($post->ID, 'article-archive', true); ?>
-									</p>
-									<a href="<?php echo site_url(); ?>/articles"><button>See More</button></a>
-							</div>
-					</div>	
 
 					<div class="media-page__photos">
 						<h2 class="media-page__photos--title">Photos</h2>
