@@ -51,6 +51,7 @@ function julialandauer_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'julialandauer' ),
+    'pr_menu' => __( 'PR Menu', 'julialandauer' ),
 	) );
 
 	/*
@@ -192,3 +193,5 @@ add_filter('excerpt_more', 'new_excerpt_more');
 add_filter('excerpt_length', 'my_excerpt_length');
 function my_excerpt_length($length) {
 return 25; }
+
+add_image_size( 'articles-featured', 985, 400, true );
