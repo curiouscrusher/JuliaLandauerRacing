@@ -1,30 +1,89 @@
 /*--------------------------------------------------------------
->>> Single  Post Page
+>>> Category Page For News & Press
 --------------------------------------------------------------*/
 
 .articles-page {
-	margin-left: span(20%);
-	margin-right: span(20%);
+  width: 100%;
 
-	@media (max-width: 80em) {
-		margin-left: span(15%);
-		margin-right: span(15%);
-	}
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 300px;
 
-	@media (max-width: 60em) {
-		margin: 0 1.5em;
-	}
+    @media (max-width: 60em) {
+      max-height: 550px;
+    }
 
-	&__title {
-		margin-top: 1em;
-		margin-bottom: .5em;
-		text-align: center;
-	}
+    @media (min-width: 60em) {
 
-	&__post {
-		margin-bottom: 4em;
-		text-align: center;
-	}
+      &:nth-of-type(odd) {
+        .articles-page__image {
+          order: 1;
+        }
 
-	
+        .articles-page__post {
+          order: 2;
+        }
+      }
+    }
+  }
+
+  &__post {
+    background-color: $racing-blue;
+    color: $white;
+    flex: 100%;
+    padding: 1.5em 3em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 60em) {
+      flex: 50%;
+    }
+
+    &--title {
+      color: $white;
+      font-family: $secondary-font;
+      font-size: 1.75rem;
+
+      &:visited {
+        // Fix for disappearing title on bg for visited link
+        color: $white;
+      }
+    }
+
+    &--button {
+      color: $white !important;
+      font-size: 16px;
+      margin-top: 1em;
+    }
+
+    > p {
+      font-size: 16px;  
+      margin: 0;
+    }
+  }
+
+  &__image {
+    background-color: #eeeeee;
+    flex: 100%;
+    max-height: 300px;
+    overflow: hidden;
+
+    > img {
+      min-width: 130vw;
+
+      @media (min-width: 50em) {
+        min-width: 985px;
+      }
+    }
+
+    .no-image {
+      min-width: 100%;
+    }
+
+    @media (min-width: 60em) {
+      flex: 50%;
+    }
+  }
 }
