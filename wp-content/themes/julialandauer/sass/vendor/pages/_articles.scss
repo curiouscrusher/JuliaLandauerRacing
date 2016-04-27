@@ -33,7 +33,6 @@
     color: $white;
     flex: 100%;
     padding: 1.5em 3em;
-
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -51,6 +50,12 @@
         // Fix for disappearing title on bg for visited link
         color: $white;
       }
+    }
+
+    &--button {
+      color: $white !important;
+      font-size: 16px;
+      margin-top: 1em;
     }
 
     > p {
