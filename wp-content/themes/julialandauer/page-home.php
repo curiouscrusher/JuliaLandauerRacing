@@ -25,7 +25,7 @@ get_header(); ?>
 								<h3><strong><?php  echo get_post_meta($post->ID, 'home-total-races', true); ?></strong> Car Races</h3>
 							</div>
 							<div class="home-page__fast-facts--races-icon">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/race-car.svg">
+								<object data="<?php echo get_template_directory_uri(); ?>/images/race-car.svg" type="image/svg+xml"></object>
 							</div>
 							
 						</div><!-- /races -->
@@ -35,13 +35,13 @@ get_header(); ?>
 								<h3><strong>2</strong> Championships</h3>
 							</div>
 							<div class="home-page__fast-facts--championship-icon">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/trophy.svg">
+								<object data="<?php echo get_template_directory_uri(); ?>/images/trophy.svg" type="image/svg+xml"></object>
 							</div>
 						</div><!-- /championship -->
 
 						<div class="home-page__fast-facts--stats">
 							<div class="home-page__fast-facts--stats-icon">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/checkered-flag.svg">
+								<object data="<?php echo get_template_directory_uri(); ?>/images/checkered-flag.svg" type="image/svg+xml"></object>
 							</div>
 							<div class="home-page__fast-facts--stats-block">
 								<h3><strong><?php  echo get_post_meta($post->ID, 'home-total-wins', true); ?></strong> Wins</h3>
