@@ -31,6 +31,15 @@
 			color: lighten($track-gray, 20);
 		}
 
+		.special-price {
+			color: #EE3E3E;
+		}
+
+		.old-price {
+			font-size: 20px;
+			text-decoration: line-through;
+		}
+
 		// Media Queries
 		@media (max-width: 60em) {
 			float: none;
@@ -70,6 +79,15 @@
 
 		h4 {
 			color: lighten($track-gray, 20);
+		}
+
+		.special-price {
+			color: #EE3E3E;
+		}
+
+		.old-price {
+			font-size: 20px;
+			text-decoration: line-through;
 		}
 
 		// Media Queries

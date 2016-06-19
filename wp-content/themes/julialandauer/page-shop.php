@@ -22,7 +22,7 @@ get_header(); ?>
 									<div class="shop-page__shirt--description">
 										<h3>JLR Shirt</h3>
 										<!-- Load the shirt text -->
-										<h4>$20</h4>
+										<h4 class="old-price">$20</h4><h4 class="special-price">$12</h4>
 										<p>
 										<?php  echo get_post_meta($post->ID, 'shirt-text', true); ?>
 										</p>
@@ -62,7 +62,7 @@ get_header(); ?>
 									<div class="shop-page__hat--description">
 										<h3>JLR Hat</h3>
 										<!-- Load the hat text -->
-										<h4>$15</h4>
+										<h4 class="old-price">$15</h4><h4 class="special-price">$10</h4>
 										<p>
 										<?php  echo get_post_meta($post->ID, 'hat-text', true); ?>
 										</p>
