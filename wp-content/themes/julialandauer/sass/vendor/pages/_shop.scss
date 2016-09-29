@@ -58,7 +58,7 @@
 		}
 	}
 
-	&__hat {
+	&__sunglasses {
 		@include product-right;
 
 		button {
@@ -66,22 +66,6 @@
 			@include paypal-btn;
 			@include center-block;
 			margin-top: 2em;
-		}
-	}
-
-	&__shirt {
-		@include product-left;
-
-		button {
-			@include primary-cta-btn;
-			@include paypal-btn;
-			@include center-block;
-			margin-top: 2em;
-		}
-
-		&--sizes {
-			margin-top: -10px;
-			text-align: center;
 		}
 	}
 }

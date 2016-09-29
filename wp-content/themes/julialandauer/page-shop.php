@@ -17,59 +17,29 @@ get_header(); ?>
 
 					<div class="shop-page__wrapper">
 
-							<div class="shop-page__shirt">
+							<div class="shop-page__sunglasses">
 								
-									<div class="shop-page__shirt--description">
-										<h3>JLR Shirt</h3>
-										<!-- Load the shirt text -->
-										<h4 class="old-price">$20</h4><h4 class="special-price">$12</h4>
+									<div class="shop-page__sunglasses--description">
+										<h3>JLR Bottle Opener Sunglasses</h3>
+										<!-- Load the sunglasses text -->
+										<h4>Starting at $15</h4>
 										<p>
-										<?php  echo get_post_meta($post->ID, 'shirt-text', true); ?>
+										<?php  echo get_post_meta($post->ID, 'sunglasses-text', true); ?>
 										</p>
 										<!-- Disassembled PayPal buttons for better styling -->
 										<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 											<input type="hidden" name="cmd" value="_s-xclick">
-											<input type="hidden" name="hosted_button_id" value="5QGKJQMMSN9LU">
-												<button>
-													<input type="submit" value="Order Now" border="0" name="submit" alt="">
-												</button>
-											<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-											<table class="shop-page__shirt--sizes">
-												<tr>
-													<td>
-														<input type="hidden" name="on0" value="Sizes">Sizes
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<select name="os0">
-														    <option value="Small">Small </option>
-														    <option value="Medium">Medium </option>
-														    <option value="Large">Large </option>
-														    <option value="Extra Large">Extra Large </option>
-														</select>
-													</td>
-												</tr>
+											<input type="hidden" name="hosted_button_id" value="PD2VBZ4CEKJPL">
+											<table>
+											<tr><td><input type="hidden" name="on0" value="Quantity/Cost">Quantity/Cost</td></tr><tr><td><select name="os0">
+												<option value="1 Pair">1 Pair $15.00 USD</option>
+												<option value="2 Pairs">2 Pairs $30.00 USD</option>
+												<option value="3 Pairs">3 Pairs $45.00 USD</option>
+												<option value="4 Pairs">4 Pairs $60.00 USD</option>
+												<option value="5 Pairs">5 Pairs $75.00 USD</option>
+											</select> </td></tr>
 											</table>
-										</form>
-									</div>
-
-									<img class="shop-page__shirt--image" src="<?php echo site_url(); ?>/wp-content/uploads/jlr-shirt-2015.jpg">
-							</div>
-
-							<div class="shop-page__hat">
-								
-									<div class="shop-page__hat--description">
-										<h3>JLR Hat</h3>
-										<!-- Load the hat text -->
-										<h4 class="old-price">$15</h4><h4 class="special-price">$10</h4>
-										<p>
-										<?php  echo get_post_meta($post->ID, 'hat-text', true); ?>
-										</p>
-										<!-- Disassembled PayPal buttons for better styling -->
-										<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-											<input type="hidden" name="cmd" value="_s-xclick">
-											<input type="hidden" name="hosted_button_id" value="MN3DQWSMWH6RG">
+											<input type="hidden" name="currency_code" value="USD">
 												<button>
 													<input type="submit" value="Order Now" border="0" name="submit" alt="">
 												</button>
@@ -77,7 +47,7 @@ get_header(); ?>
 										</form>
 									</div>
 
-									<img class="shop-page__hat--image" src="<?php echo site_url(); ?>/wp-content/uploads/jlr-hat-2015.jpg">
+									<img class="shop-page__sunglasses--image" src="<?php echo site_url(); ?>/wp-content/uploads/jlr-sunglasses-2016.jpg">
 							</div>
 
 							<div class="shop-page__pen">
