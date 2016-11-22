@@ -50,7 +50,7 @@ get_header(); ?>
 					</div>	
 
 					<div class="speaking-page__previous">
-						<h3>Previous Speaking Clients</h3>
+						<h3>Select Clients</h3>
 						<div class="speaking-page__previous--column">
 							<ul>
 								<li>Associated Builders and Contractors</li>
@@ -66,6 +66,7 @@ get_header(); ?>
 						<div class="speaking-page__previous--column">
 							<ul>
 								<li>Meet the Innovators: Brand Builders</li>
+								<li>North Carolina Chamber of Commerce</li>
 								<li>Notre Dame High School for Girls</li>
 								<li>Marymount School of New York</li>
 								<li>Chabot Science Center</li>
