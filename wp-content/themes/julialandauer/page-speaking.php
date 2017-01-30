@@ -17,6 +17,16 @@ get_header(); ?>
 					
 					<?php get_template_part( 'content', 'page' ); ?>
 
+					<div class="speaking-page__contact">
+						<h4 class="speaking-page__contact--title">Ready For Julia To Speak At Your Event?</h4>
+							<p class="speaking-page__contact--lead">
+								<!-- Load the speaking text -->
+								<?php  echo get_post_meta($post->ID, 'speaking-lead', true); ?>
+							</p>
+						
+						<?php echo do_shortcode ( '[contact-form-7 id="109" title="Speaking Request"]' ); ?>
+					</div>
+
 					<div class="speaking-page__topics">
 						<h2 class="speaking-page__topics--title">Events &amp; Speaking</h2>
 							<div class="speaking-page__topics--nice-girls">
@@ -84,16 +94,6 @@ get_header(); ?>
 								<?php  echo get_post_meta($post->ID, 'speaking-video-right-code', true); ?>
 							</div>
 						</div>
-					</div>
-
-					<div class="speaking-page__contact">
-						<h4 class="speaking-page__contact--title">Ready For Julia To Speak At Your Event?</h4>
-							<p class="speaking-page__contact--lead">
-								<!-- Load the speaking text -->
-								<?php  echo get_post_meta($post->ID, 'speaking-lead', true); ?>
-							</p>
-						
-						<?php echo do_shortcode ( '[contact-form-7 id="109" title="Speaking Request"]' ); ?>
 					</div>				
 
 				<?php endwhile; // end of the loop. ?>
