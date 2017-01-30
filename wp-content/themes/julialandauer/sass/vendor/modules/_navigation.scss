@@ -118,7 +118,7 @@
       }
 
       .current-menu-item {
-        font-weight: $bold;
+        border-bottom: 3px solid lighten($racing-blue, 10);
       }
     }
   }
