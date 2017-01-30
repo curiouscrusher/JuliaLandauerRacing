@@ -27,14 +27,6 @@ get_header(); ?>
 										<?php  echo get_post_meta($post->ID, 'speaking-nice-girls', true); ?>
 									</p>
 							</div>
-							<div class="speaking-page__topics--branding">
-								<h1>2</h1>
-								<h4>The Brand of You</h4>	
-									<p>
-										<!-- Load the speaking text -->
-										<?php  echo get_post_meta($post->ID, 'speaking-branding', true); ?>
-									</p>
-							</div>
 							<div class="speaking-page__topics--mindsets">
 								<h1>3</h1>
 								<h4>Habits &amp; Mindsets of Successful People</h4>	

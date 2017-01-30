@@ -35,12 +35,11 @@
 		}
 
 		&--nice-girls,
-		&--branding,
 		&--mindsets {
 			float: left;
 			margin-right: 2.5%;
 			text-align: center;
-			width: span(30%);
+			width: span(45%);
 
 			@media (max-width: 60em) {
 				width: 100%;
