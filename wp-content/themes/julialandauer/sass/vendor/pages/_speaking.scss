@@ -20,6 +20,13 @@
 			padding: 1em 0;
 		}
 
+		&--intro {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 650px;
+			text-align: center;
+		}
+
 		h1 {
 			background-color: $racing-blue;
 			border-radius: 3em;

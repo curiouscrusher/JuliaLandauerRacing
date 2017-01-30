@@ -29,6 +29,8 @@ get_header(); ?>
 
 					<div class="speaking-page__topics">
 						<h2 class="speaking-page__topics--title">Events &amp; Speaking</h2>
+							<p class="speaking-page__topics--intro">Julia wants to provide your organization with the most possible value by tailoring her speaking to your needs. Julia is generally available for keynotes, panel discussions, and small group workshops.</p>
+
 							<div class="speaking-page__topics--nice-girls">
 								<h1>1</h1>
 								<h4>Can Nice Girls Win (Races)?</h4>
