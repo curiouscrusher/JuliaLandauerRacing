@@ -40,7 +40,7 @@ get_header(); ?>
 									</p>
 							</div>
 							<div class="speaking-page__topics--mindsets">
-								<h1>3</h1>
+								<h1>2</h1>
 								<h4>Habits &amp; Mindsets of Successful People</h4>	
 									<p>
 										<!-- Load the speaking text -->
