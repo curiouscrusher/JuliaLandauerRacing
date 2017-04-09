@@ -47,8 +47,10 @@
 	& > a {
 		color: $white;
 		background-color: $racing-blue;
+		border: 2px solid $white;
 		float: left;
 		clear: left;
+		margin-top: 5px;
 		padding: .75em;
 
 		&:hover {
