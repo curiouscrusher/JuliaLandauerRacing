@@ -5,17 +5,12 @@
 .about-page {
 
 	&__history {
-		background-color: $racing-blue;
-		color: $white;
 		clear: both;
 		display: inline-block;
 		padding-bottom: 6em;
 		padding-left: span(1);
 		padding-right: span(1);
-		padding-top: 5em;
 		width: 100%;
-		// overflow: hidden;
-		//padding: 3em;
 
 		@media (max-width: 60em) {
 				padding: 1em 1.5em 0 1.5em;
