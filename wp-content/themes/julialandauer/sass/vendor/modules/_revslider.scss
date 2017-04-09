@@ -1,0 +1,14 @@
+// Been Up To bullet styles
+.home-page__been-up-to {
+    .rev_slider_wrapper {
+        .bullet {
+            background: transparent !important;
+            border: 2px solid $black;
+            border-radius: 50%;
+
+            &.selected {
+                background: $black !important;
+            }
+        }
+    }
+}

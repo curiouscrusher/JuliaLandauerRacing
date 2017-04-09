@@ -17,45 +17,9 @@ get_header(); ?>
 					
 					<?php get_template_part( 'content', 'page' ); ?>
 
-					<div class="home-page__fast-facts">
-						<h1 class="home-page__fast-facts--title">Fast Facts</h1>
-
-						<div class="home-page__fast-facts--races">
-							<div class="home-page__fast-facts--races-title">
-								<h3><strong><?php  echo get_post_meta($post->ID, 'home-total-races', true); ?></strong> Car Races</h3>
-							</div>
-							<div class="home-page__fast-facts--races-icon">
-								<object data="<?php echo get_template_directory_uri(); ?>/images/race-car.svg" type="image/svg+xml"></object>
-							</div>
-							
-						</div><!-- /races -->
-
-						<div class="home-page__fast-facts--championship">
-							<div class="home-page__fast-facts--championship-title">
-								<h3><strong>2</strong> Championships</h3>
-							</div>
-							<div class="home-page__fast-facts--championship-icon">
-								<object data="<?php echo get_template_directory_uri(); ?>/images/trophy.svg" type="image/svg+xml"></object>
-							</div>
-						</div><!-- /championship -->
-
-						<div class="home-page__fast-facts--stats">
-							<div class="home-page__fast-facts--stats-icon">
-								<object data="<?php echo get_template_directory_uri(); ?>/images/checkered-flag.svg" type="image/svg+xml"></object>
-							</div>
-							<div class="home-page__fast-facts--stats-block">
-								<h3><strong><?php  echo get_post_meta($post->ID, 'home-total-wins', true); ?></strong> Wins</h3>
-							</div>
-							<div class="home-page__fast-facts--stats-block">
-								<h3><strong><?php  echo get_post_meta($post->ID, 'home-top-3', true); ?></strong> Top 3</h3>
-							</div>
-							<div class="home-page__fast-facts--stats-block">
-								<h3><strong><?php  echo get_post_meta($post->ID, 'home-top-5', true); ?></strong> Top 5</h3>
-							</div>
-
-						</div><!-- /stats -->
-						
-					</div><!-- /fast-facts -->
+					<div class="home-page__been-up-to">
+						<?php echo do_shortcode('[rev_slider been-up-to]'); ?>
+					</div>
 
 					<div class="home-page__team-goals edge--top edge--bottom--reverse">
 						<h1>Team Goals</h1>
