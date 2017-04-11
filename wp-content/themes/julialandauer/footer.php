@@ -25,7 +25,7 @@
 		<p>© 2015. Julia Landauer Racing LLC. All Rights Reserved.</p>
 	</div>
 	<div class="site-footer__credits">
-		<p>Design and Development by <a href="http://nateholland.co">Nate Holland</a></p>
+		<p>Design and Development by <a href="http://nateholland.site">Nate Holland</a></p>
 	</div><!-- .site-footer -->
 
 	<?php // GA Code ?>
