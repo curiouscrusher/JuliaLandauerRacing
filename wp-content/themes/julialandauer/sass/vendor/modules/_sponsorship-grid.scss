@@ -10,14 +10,25 @@
 		text-align: center;
 	}
 
-	&--logo {
+	a {
+		display: inline-block;
 		float: left;
 		margin-bottom: 2em;
-		width: span(33%);
+		min-height: 250px;
+		width: span(33.33%);
 
 		@media (max-width: 60em) {
 			width: span(50%);
 			margin-bottom: 1.5em;
 		}
+
+		&:nth-of-type(4n) {
+			clear: left;
+		}
+	}
+
+	&--logo {
+		padding: 0 2em;
+		width: 100%;
 	}
 }
