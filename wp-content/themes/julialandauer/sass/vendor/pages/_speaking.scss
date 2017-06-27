@@ -4,6 +4,10 @@
 
 .speaking-page {
 
+	&__video-hero-wrapper {
+		@include aspect-ratio(16/9);
+	}
+
 	&__topics {
 		overflow: hidden;
 		margin-bottom: 4em;
