@@ -1,0 +1,11 @@
+[class^="test-"], [class*=" test-"] {
+  /* `test-` prefix */
+}
+
+[class$="-test"], [class*="-test "] {
+  /* `-test` suffix */
+}
+
+
+
+/*# sourceMappingURL=class-prefix.css.map */

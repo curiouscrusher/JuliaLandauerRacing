@@ -1,0 +1,12 @@
+.justify {
+  text-align: justify;
+}
+.justify:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+/*# sourceMappingURL=justify.css.map */

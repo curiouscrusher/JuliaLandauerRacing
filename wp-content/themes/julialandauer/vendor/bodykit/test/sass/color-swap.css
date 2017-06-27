@@ -1,0 +1,59 @@
+.color-swap {
+  color: #fff;
+}
+.color-swap:hover, .color-swap:focus {
+  color: #000;
+}
+
+.color-swap-1s-transition {
+  color: #fff;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.color-swap-1s-transition:hover, .color-swap-1s-transition:focus {
+  color: #000;
+}
+
+.color-swap-bg {
+  background-color: #fff;
+}
+.color-swap-bg:hover, .color-swap-bg:focus {
+  background-color: #000;
+}
+
+.color-swap-both {
+  color: #fff;
+  background-color: #000;
+}
+.color-swap-both:hover, .color-swap-both:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+.color-swap-both-1s-transition {
+  color: #fff;
+  background-color: #000;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.color-swap-both-1s-transition:hover, .color-swap-both-1s-transition:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+.color-swap-both-bg {
+  color: #fff;
+  background-color: #000;
+}
+.color-swap-both-bg:hover, .color-swap-both-bg:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+
+
+/*# sourceMappingURL=color-swap.css.map */
