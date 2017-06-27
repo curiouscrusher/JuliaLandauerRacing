@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * This is the template for the speaking page. 
+ * This is the template for the speaking page.
  *
  * @package julialandauer
  */
@@ -14,17 +14,11 @@ get_header(); ?>
 			<div class="speaking-page">
 
 				<?php while ( have_posts() ) : the_post(); ?>
-					
+
 					<?php get_template_part( 'content', 'page' ); ?>
 
-					<div class="speaking-page__contact">
-						<h4 class="speaking-page__contact--title">Ready For Julia To Speak At Your Event?</h4>
-							<p class="speaking-page__contact--lead">
-								<!-- Load the speaking text -->
-								<?php  echo get_post_meta($post->ID, 'speaking-lead', true); ?>
-							</p>
-						
-						<?php echo do_shortcode ( '[contact-form-7 id="109" title="Speaking Request"]' ); ?>
+					<div class="speaking-page__video-hero-wrapper">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bIHgmRwbTS8" frameborder="0" allowfullscreen></iframe>
 					</div>
 
 					<div class="speaking-page__topics">
@@ -41,7 +35,7 @@ get_header(); ?>
 							</div>
 							<div class="speaking-page__topics--mindsets">
 								<h1>2</h1>
-								<h4>Habits &amp; Mindsets of Successful People</h4>	
+								<h4>Habits &amp; Mindsets of Successful People</h4>
 									<p>
 										<!-- Load the speaking text -->
 										<?php  echo get_post_meta($post->ID, 'speaking-mindsets', true); ?>
@@ -51,7 +45,7 @@ get_header(); ?>
 
 					<div class="speaking-page__testimonials">
 						<?php putRevSlider(11) ?>
-					</div>	
+					</div>
 
 					<div class="speaking-page__previous">
 						<h3>Select Clients</h3>
@@ -81,22 +75,15 @@ get_header(); ?>
 						</div>
 					</div>
 
-					<div class="speaking-page__video-feature">
-						<div class="speaking-page__video-feature--left-block">
-							<h4><?php  echo get_post_meta($post->ID, 'speaking-video-left-title', true); ?></h4>
-							<p><?php  echo get_post_meta($post->ID, 'speaking-video-left-text', true); ?></p>
-							<div class="speaking-page__video-feature--video">
-								<?php  echo get_post_meta($post->ID, 'speaking-video-left-code', true); ?>
-							</div>
-						</div>
-						<div class="speaking-page__video-feature--right-block">
-							<h4><?php  echo get_post_meta($post->ID, 'speaking-video-right-title', true); ?></h4>
-							<p><?php  echo get_post_meta($post->ID, 'speaking-video-right-text', true); ?></p>
-							<div class="speaking-page__video-feature--video">
-								<?php  echo get_post_meta($post->ID, 'speaking-video-right-code', true); ?>
-							</div>
-						</div>
-					</div>				
+					<div class="speaking-page__contact">
+						<h4 class="speaking-page__contact--title">Ready For Julia To Speak At Your Event?</h4>
+							<p class="speaking-page__contact--lead">
+								<!-- Load the speaking text -->
+								<?php  echo get_post_meta($post->ID, 'speaking-lead', true); ?>
+							</p>
+
+						<?php echo do_shortcode ( '[contact-form-7 id="109" title="Speaking Request"]' ); ?>
+					</div>
 
 				<?php endwhile; // end of the loop. ?>
 
