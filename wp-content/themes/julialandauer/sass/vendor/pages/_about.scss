@@ -79,15 +79,17 @@
 				border-bottom: 1px solid $tire-black;
 
 				&:last-of-type { border: 0; }
+
+				&:first-of-type td { padding: 10px 0; }
 			}
 
 			td {
-				padding: 2em 1em;
+				padding: 5px 0; 
 	
 				@media (max-width: 30em) {
 					&:nth-of-type(1),
 					&:nth-of-type(2) {
-						max-width: 3.25em;
+						max-width: 2em;
 					}
 
 					h4 {
