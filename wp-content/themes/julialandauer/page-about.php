@@ -13,7 +13,34 @@ get_header(); ?>
 
 			<div class="about-page">
 
-			<div class="timeline-wrapper">
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php get_template_part( 'content', 'page' ); ?>
+
+					<div class="about-page__history">
+						<h2 class="about-page__history--title">About Julia</h2>
+						<div class="about-page__history--left">
+						<p>
+							<!-- Load the about/history text -->
+							<?php  echo get_post_meta($post->ID, 'about_left', true); ?>
+						</p>
+						</div>
+						<div class="about-page__history--right">
+						<p>
+							<!-- Load the about/history text -->
+							<?php  echo get_post_meta($post->ID, 'about_right', true); ?>
+						</p>
+						</div>
+					</div>
+
+					<div class="about-page__schedule--hero-photo">
+							<!-- Load Schedule Hero Image-->
+							<?php echo do_shortcode('[rev_slider about-full-section]'); ?>
+					</div>
+
+				<?php endwhile; // end of the loop. ?>
+
+				<div class="timeline-wrapper">
 				<section id="cd-timeline" class="cd-container">
 					<div class="cd-timeline-block">
 						<div class="cd-timeline-img"></div> <!-- cd-timeline-img -->
@@ -148,33 +175,6 @@ get_header(); ?>
 					</div> <!-- cd-timeline-block -->
 				</section> <!-- cd-timeline -->
 			</div>
-
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'content', 'page' ); ?>
-
-					<div class="about-page__history">
-						<h2 class="about-page__history--title">About Julia</h2>
-						<div class="about-page__history--left">
-						<p>
-							<!-- Load the about/history text -->
-							<?php  echo get_post_meta($post->ID, 'about_left', true); ?>
-						</p>
-						</div>
-						<div class="about-page__history--right">
-						<p>
-							<!-- Load the about/history text -->
-							<?php  echo get_post_meta($post->ID, 'about_right', true); ?>
-						</p>
-						</div>
-					</div>
-
-					<div class="about-page__schedule--hero-photo">
-							<!-- Load Schedule Hero Image-->
-							<?php echo do_shortcode('[rev_slider about-full-section]'); ?>
-					</div>
-
-				<?php endwhile; // end of the loop. ?>
 
 			</div><!-- /about-page -->
 
