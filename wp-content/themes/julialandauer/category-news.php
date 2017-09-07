@@ -13,10 +13,10 @@ get_header(); ?>
 
       <div class="articles-page">
 
-      <?php wp_nav_menu( array( 'theme_location' => 'pr_menu' ) ); ?>
+      <?php // wp_nav_menu( array( 'theme_location' => 'pr_menu' ) ); // Removed 9/6/17 Per Julia request. Use for having custom menu on news page ?>
 
         <?php
-        query_posts('cat=3');
+        query_posts( array( 'category_name'  => 'news' ) );
         ?>
 
         <?php if (have_posts()) : ?>
