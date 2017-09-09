@@ -17,10 +17,6 @@ get_header(); ?>
 					
 					<?php get_template_part( 'content', 'page' ); ?>
 
-					<div class="home-page__been-up-to">
-						<?php echo do_shortcode('[rev_slider been-up-to]'); ?>
-					</div>
-
 					<div class="home-page__team-goals edge--top edge--bottom--reverse">
 						<h1>Team Goals</h1>
 							<div class="home-page__team-goals--item">

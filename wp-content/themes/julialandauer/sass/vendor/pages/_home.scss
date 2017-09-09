@@ -38,7 +38,8 @@
 			float: left;
 			margin-bottom: 4em;
 			text-align: center;
-			width: span(50%);
+			width: span(40%);
+			padding: 0 1em;
 
 			// Keep #4 from jumping before 3 at certain screen sizes
 			&:nth-of-type(3) { clear: left; }
@@ -49,8 +50,10 @@
 				width: span(100%);
 			}
 
-			@media (min-width: 75em) {
-				padding: 0 6em;
+			@media (min-width: 55em) {
+				padding: 0 4em;
+
+				&:nth-of-type(odd) { margin-left: 10%; }
 			}
 
 			h2 {
@@ -59,7 +62,7 @@
 				color: $racing-blue;
 				display: inline-block;
 				font-family: $secondary-font;
-				font-size: 6em;
+				font-size: 4em;
 				height: 1.5em;
 				line-height: 1.5em;
 				margin-bottom: .25em;
