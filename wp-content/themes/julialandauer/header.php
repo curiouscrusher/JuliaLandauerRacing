@@ -15,6 +15,22 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<!-- Begin OG Meta Tags -->
+<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/og-image.jpg" />
+<meta property="og:url" content="<?php echo get_site_url(); ?>" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="<?php bloginfo( 'description' ); ?>" />
+<meta property="og:title" content="<?php echo bloginfo( 'name' ); ?>" />
+<!-- End OG Meta Tags -->
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@julialandauer" />
+<meta name="twitter:title" content="<?php echo bloginfo( 'name' ); ?>" />
+<meta name="twitter:description" content="<?php bloginfo( 'description' ); ?>" />
+<meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/images/og-image.jpg" />
+<!-- End Twitter Card Tags -->
+
 <!-- Hotjar Tracking Code for julialandauer.com -->
 <script>
     (function(h,o,t,j,a,r){
