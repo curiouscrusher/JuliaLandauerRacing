@@ -18,7 +18,7 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="about-page__schedule" id="schedule">
-					<h2>2017 Nascar K&amp;N Pro Series</h2>
+					<h2>2018 Schedule</h2>
 
 						<!-- Load The Schedule -->
 						<?php
