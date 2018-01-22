@@ -37,13 +37,13 @@ get_header(); ?>
 									</p>
 								</div>
 
-								<div class="phone">
+								<?php /* <div class="phone">
 									<p>Phone</p>
 									<p>
 									<!-- Load the phone number -->
 									<?php  echo get_post_meta($post->ID, 'contact-phone', true); ?>
 									</p>
-								</div>
+								</div> */ ?>
 
 								<div class="address">
 									<p>Address</p>
