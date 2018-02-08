@@ -25,7 +25,7 @@ get_header(); ?>
 								<br /><br />
 								We will try to respond within 3-5 business days.</p>
 
-								<?php echo do_shortcode( '[contact-form-7 id="91" title="julia landauer contact"]' ); ?>
+								<?php echo do_shortcode( '[contact-form-7 id="626" title="julia landauer contact new"]' ); ?>
 									
 							</div>
 							<div class="contact-page__wrapper--info-section">	
