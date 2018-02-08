@@ -35,6 +35,21 @@
 					@include form-box($box-padding: 1.5em 1em, $box-width: 90%);
 				}
 
+				.your-purpose {
+					margin-left: .75em;
+
+					select {
+						-webkit-appearance: none;
+						background-color: $track-gray;
+						border-radius: 0;
+						border: 4px solid $racing-blue;
+						border-top: 0;
+						border-bottom: 0;
+						border-right: 0;
+						padding: .5em 1em .5em .5em;
+					}
+				}
+
 				.your-message {
 					@include form-box($box-padding: .5em 1em, $textarea-height: 7em, $box-width: 90%);
 				}
