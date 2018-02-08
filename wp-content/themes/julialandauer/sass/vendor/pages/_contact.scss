@@ -35,6 +35,22 @@
 					@include form-box($box-padding: 1.5em 1em, $box-width: 90%);
 				}
 
+				.your-recipient {
+					margin-right: .75em;
+
+					select {
+						-webkit-appearance: none;
+						background: url('../julialandauer/images/icon-caret-down.svg') 85% / 15% no-repeat;
+						background-color: $light-gray;
+						border-radius: 0;
+						border: 4px solid $track-gray;
+						border-top: 0;
+						border-bottom: 0;
+						border-right: 0;
+						padding: .5em 2em .5em .5em;
+					}
+				}
+
 				.your-message {
 					@include form-box($box-padding: .5em 1em, $textarea-height: 7em, $box-width: 90%);
 				}
