@@ -23,7 +23,7 @@ get_header(); ?>
 					<?php get_template_part( 'modules/sponsorship-grid' ); ?>
 
 					<div class="partners-page__reasons">
-						<h2 class="partners-page__reasons--title">Learn More About Partnering With Julia</h2>
+						<h2 class="partners-page__reasons--title">Learn More About Collaborating With Julia</h2>
 							<div class="partners-page__reasons--meaning">
 								<h3>What It Means</h3>
 									<p>
@@ -42,7 +42,7 @@ get_header(); ?>
 
 					<div class="partners-page__actions edge--top edge--bottom--reverse">
 							<div class="partners-page__actions--partner-with-julia">
-								<h3 class="partners-page__actions--title">Want To Partner With Julia?</h3>	
+								<h3 class="partners-page__actions--title">Want To Collaborate With Julia?</h3>	
 									<p>
 										<!-- Load the partners text -->
 										<?php  echo get_post_meta($post->ID, 'partner-with-julia', true); ?>
@@ -52,7 +52,7 @@ get_header(); ?>
 					</div>	
 
 					<div class="partners-page__partner-photos">
-						<h2 class="partners-page__partner-photos--title">Partner Events</h2>
+						<h2 class="partners-page__partner-photos--title">Events</h2>
 						<?php putRevSlider(3) ?>
 					</div>				
 

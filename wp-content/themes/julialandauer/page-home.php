@@ -17,26 +17,9 @@ get_header(); ?>
 					
 					<?php get_template_part( 'content', 'page' ); ?>
 
-					<div class="home-page__team-goals edge--top edge--bottom--reverse">
-						<h1>Team Goals</h1>
-							<div class="home-page__team-goals--item">
-								<h2>1</h2>
-								<h4><?php  echo get_post_meta($post->ID, 'goal-1', true); ?></h4>
-							</div>
-							<div class="home-page__team-goals--item">
-								<h2>2</h2>
-								<h4><?php  echo get_post_meta($post->ID, 'goal-2', true); ?></h4>
-							</div>
-							<div class="home-page__team-goals--item">
-								<h2>3</h2>
-								<h4><?php  echo get_post_meta($post->ID, 'goal-3', true); ?></h4>
-							</div>
-							<div class="home-page__team-goals--item">
-								<h2>4</h2>
-								<h4><?php  echo get_post_meta($post->ID, 'goal-4', true); ?></h4>
-							</div>
+					<h2 class="home-page__instagram-title">Latest Posts</h2>
 
-					</div><!-- /team-goals -->
+					<?php echo do_shortcode("[instagram-feed]"); ?>
 
 					<?php // Sponsor Grid ?>
 					<?php get_template_part( 'modules/sponsorship-grid' ); ?>
