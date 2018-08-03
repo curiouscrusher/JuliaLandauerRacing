@@ -29,11 +29,11 @@ get_header(); ?>
 						?>
 					</div>
 
-					<div class="about-page__stats edge--top">
+					<!-- <div class="about-page__stats edge--top">
 					<h2>Julia's Statistics</h2>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/stats-1.png">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/stats-2.png">
-					</div>
+					</div> -->
 
 				<?php endwhile; // end of the loop. ?>
 
