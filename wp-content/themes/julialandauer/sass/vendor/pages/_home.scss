@@ -12,90 +12,13 @@
 	}
 
 	&-page {
-	padding-bottom: 4em;
-	// overflow: auto;
-
-	&__been-up-to {
-		margin: 2em 0;
+		padding-bottom: 4em;
 	}
+}
 
-	&__team-goals {
-		background-color: $racing-blue;
-		// overflow: auto;
-		color: $white;
-		height: auto;
-		display: inline-block;
-		margin: 0 auto 2em;
-		width: 100%;
-
-		h1	 {
-			margin-top: 1em;
-			margin-bottom: 1em;
-			text-align: center;
-		}
-
-		&--item {
-			float: left;
-			margin-bottom: 4em;
-			text-align: center;
-			width: span(40%);
-			padding: 0 1em;
-
-			// Keep #4 from jumping before 3 at certain screen sizes
-			&:nth-of-type(3) { clear: left; }
-
-			@media (max-width: 55em) {
-				float: none;
-				margin-bottom: 2em;
-				width: span(100%);
-			}
-
-			@media (min-width: 55em) {
-				padding: 0 4em;
-
-				&:nth-of-type(odd) { margin-left: 10%; }
-			}
-
-			h2 {
-				background-color: $white;
-				border-radius: 3em;
-				color: $racing-blue;
-				display: inline-block;
-				font-family: $secondary-font;
-				font-size: 4em;
-				height: 1.5em;
-				line-height: 1.5em;
-				margin-bottom: .25em;
-				text-align: center;
-				width: 1.5em;
-
-				@media (max-width: 60em) {
-					border-radius: 2.5em;
-					font-size: 4em;
-					height: 1.75em;
-					line-height: 1.75em;
-					width: 1.75em;
-				}
-			}
-		}
-	}
-
-		&__news {
-			background-color: $racing-blue;
-			
-
-			// .large_bold_white {
-			// 	border-bottom: 2px solid $racing-blue !important;
-			// 	overflow: hidden;
-			// 	padding-bottom: 2em;
-			// 	min-height: 60px;
-			// }
-
-			&--title {
-				color: $white;
-				padding-top: 1em;
-				text-align: center;
-			}
-		}
-	}
+.home-page__instagram-title {
+	margin-bottom: 20px;
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
 }

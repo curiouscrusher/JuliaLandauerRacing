@@ -1,30 +1,34 @@
 .module__sponsor-grid {
-	@extend .partners-page__reasons;
+	align-items: center;
 	background-color: $white;
-	// color: $tire-black;
-	// max-width: 80em;
+	clear: both;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto;
+	grid-column-gap: 2em;
+	grid-row-gap: 2em;
 	margin: 0 auto 1em;
+	padding-left: span(1 of 12);
+	padding-right: span(1 of 12);
+	padding-top: 2em;
+	width: span(10 of 12);
+
+	@media (max-width: 60em) {
+		grid-template-columns: 1fr;
+	}
 
 	&--title {
-		padding-bottom: .5em;
+		grid-column: 1 / span 3;
 		text-align: center;
+
+		@media (max-width: 60em) {
+			grid-column: 1;
+		}
 	}
 
 	a {
 		display: inline-block;
-		float: left;
-		margin-bottom: 2em;
-		min-height: 250px;
-		width: span(33.33%);
-
-		@media (max-width: 60em) {
-			width: span(50%);
-			margin-bottom: 1.5em;
-		}
-
-		&:nth-of-type(4n) {
-			clear: left;
-		}
+		width: 100%;
 	}
 
 	&--logo {
