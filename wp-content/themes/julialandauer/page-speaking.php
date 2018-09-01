@@ -27,26 +27,26 @@ get_header(); ?>
 
 						<div class="speaking-page__topics--stem">
 							<h1>1</h1>
-							<h4>Marrying Passion and STEM</h4>
+							<h4><?php  echo get_post_meta($post->ID, 'speaking-topic-one-title', true); ?></h4>
 								<p>
 									<!-- Load the speaking text -->
-									<?php  echo get_post_meta($post->ID, 'speaking-stem', true); ?>
+									<?php  echo get_post_meta($post->ID, 'speaking-topic-one-content', true); ?>
 								</p>
 						</div>
 						<div class="speaking-page__topics--nice-girls">
 							<h1>2</h1>
-							<h4>Can Nice Girls Win (Races)?</h4>
+							<h4><?php  echo get_post_meta($post->ID, 'speaking-topic-two-title', true); ?></h4>
 								<p>
 									<!-- Load the speaking/history text -->
-									<?php  echo get_post_meta($post->ID, 'speaking-nice-girls', true); ?>
+									<?php  echo get_post_meta($post->ID, 'speaking-topic-two-content', true); ?>
 								</p>
 						</div>
 						<div class="speaking-page__topics--mindsets">
 							<h1>3</h1>
-							<h4>Habits &amp; Mindsets of Successful People</h4>
+							<h4><?php  echo get_post_meta($post->ID, 'speaking-topic-three-title', true); ?></h4>
 								<p>
 									<!-- Load the speaking text -->
-									<?php  echo get_post_meta($post->ID, 'speaking-mindsets', true); ?>
+									<?php  echo get_post_meta($post->ID, 'speaking-topic-three-content', true); ?>
 								</p>
 						</div>
 					</div>
