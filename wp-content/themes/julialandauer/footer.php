@@ -22,7 +22,7 @@
 	</div>
 	<hr class="site-footer__divider" />
 	<div class="site-footer__copyright">
-		<p>© 2015. Julia Landauer Racing LLC. All Rights Reserved.</p>
+		<p>© <?php echo date('Y'); ?>. Julia Landauer Racing LLC. All Rights Reserved.</p>
 	</div>
 	<div class="site-footer__credits">
 		<p>Design and Development by <a href="http://nateholland.site">Nate Holland</a></p>
