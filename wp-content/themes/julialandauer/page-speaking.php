@@ -18,7 +18,7 @@ get_header(); ?>
 					<?php get_template_part( 'content', 'page' ); ?>
 
 					<div class="speaking-page__video-hero-wrapper">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bIHgmRwbTS8" frameborder="0" allowfullscreen></iframe>
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/oXF2m-sG37Y" frameborder="0" allowfullscreen></iframe>
 					</div>
 
 					<div class="speaking-page__topics">
