@@ -199,3 +199,5 @@ function my_excerpt_length($length) {
 return 25; }
 
 add_image_size( 'articles-featured', 985, 400, true );
+
+add_filter('xmlrpc_enabed', '__return_false');
