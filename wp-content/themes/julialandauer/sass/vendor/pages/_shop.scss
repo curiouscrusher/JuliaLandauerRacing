@@ -2,6 +2,14 @@
 >>> Shop Page
 --------------------------------------------------------------*/
 
+.shopify-buy-frame--toggle {
+	top: calc(50% - 150px) !important;
+
+	@media (max-width: 60em) {
+		top: calc(50% - 130px) !important;
+	}
+}
+
 .shop-page {
 	&__wrapper {
 		padding: 2em 0 3em;
@@ -12,60 +20,36 @@
 			}
 	}
 
+	&__shirt {
+		margin-bottom: 25px;
+		margin-top: 25px;
+
+		.shopify-buy-frame--product.shopify-buy__layout-vertical {
+			max-width: 100% !important;
+		}
+    }
+
 	&__hero-card {
 		@include product-right;
 
-		button {
-			@include primary-cta-btn($font-size: 1em);
-			@include center-block;
-			@include paypal-btn;
-			margin-top: 2em;
-		}
-
-		&-order-instructions {
-			border: 1px solid $racing-blue;
-			display: none;
-			padding: 0 2em;
-			position: relative;
-
-			&:before {
-			    backface-visibility: hidden;
-			    background-color: $white;
-			    content:'';
-			    height: 25px;
-			    width: 25px;
-			    left: 0;
-			    margin: auto;
-			    margin-top: 1px/1.414213562; // sqrt(2)
-			    position: absolute;
-			    right: 0;
-			    top: 0;
-			    transform: translateY(-50%) rotate(45deg);
-			    border-left: inherit;
-			    border-top: inherit;
-			}
+		.shopify-buy-frame--product.shopify-buy__layout-vertical {
+			max-width: 100% !important;
 		}
 	}
 
 	&__pen {
 		@include product-left;
 
-		button {
-			@include primary-cta-btn;
-			@include paypal-btn;
-			@include center-block;
-			margin-top: 2em;
+		.shopify-buy-frame--product.shopify-buy__layout-vertical {
+			max-width: 100% !important;
 		}
 	}
 
 	&__sunglasses {
 		@include product-right;
 
-		button {
-			@include primary-cta-btn;
-			@include paypal-btn;
-			@include center-block;
-			margin-top: 2em;
+		.shopify-buy-frame--product.shopify-buy__layout-vertical {
+			max-width: 100% !important;
 		}
 	}
 }

@@ -25,30 +25,36 @@ get_header(); ?>
 						<h2 class="speaking-page__topics--title">Events &amp; Speaking</h2>
 						<p class="speaking-page__topics--intro">Julia wants to provide your organization with the most possible value by tailoring her speaking to your needs. Julia is generally available for keynotes, panel discussions, and small group workshops.</p>
 
-						<div class="speaking-page__topics--stem">
-							<h1>1</h1>
-							<h4><?php  echo get_post_meta($post->ID, 'speaking-topic-one-title', true); ?></h4>
-								<p>
-									<!-- Load the speaking text -->
-									<?php  echo get_post_meta($post->ID, 'speaking-topic-one-content', true); ?>
-								</p>
-						</div>
-						<div class="speaking-page__topics--nice-girls">
-							<h1>2</h1>
-							<h4><?php  echo get_post_meta($post->ID, 'speaking-topic-two-title', true); ?></h4>
-								<p>
-									<!-- Load the speaking/history text -->
-									<?php  echo get_post_meta($post->ID, 'speaking-topic-two-content', true); ?>
-								</p>
-						</div>
-						<div class="speaking-page__topics--mindsets">
-							<h1>3</h1>
-							<h4><?php  echo get_post_meta($post->ID, 'speaking-topic-three-title', true); ?></h4>
-								<p>
-									<!-- Load the speaking text -->
-									<?php  echo get_post_meta($post->ID, 'speaking-topic-three-content', true); ?>
-								</p>
-						</div>
+                        <?php if (get_post_meta($post->ID, 'speaking-topic-one-title', true) != '') : ?>
+                            <div class="speaking-page__topics--stem">
+                                <h1><?php  echo get_post_meta($post->ID, 'speaking-topic-one-number', true); ?></h1>
+                                <h4><?php  echo get_post_meta($post->ID, 'speaking-topic-one-title', true); ?></h4>
+                                    <p>
+                                        <!-- Load the speaking text -->
+                                        <?php  echo get_post_meta($post->ID, 'speaking-topic-one-content', true); ?>
+                                    </p>
+                            </div>
+                        <?php endif; ?>
+                        <?php if (get_post_meta($post->ID, 'speaking-topic-two-title', true) != '') : ?>
+                            <div class="speaking-page__topics--nice-girls">
+                                <h1><?php  echo get_post_meta($post->ID, 'speaking-topic-two-number', true); ?></h1>
+                                <h4><?php  echo get_post_meta($post->ID, 'speaking-topic-two-title', true); ?></h4>
+                                    <p>
+                                        <!-- Load the speaking/history text -->
+                                        <?php  echo get_post_meta($post->ID, 'speaking-topic-two-content', true); ?>
+                                    </p>
+                            </div>
+                        <?php endif; ?>
+                        <?php if (get_post_meta($post->ID, 'speaking-topic-three-title', true) != '') : ?>
+                            <div class="speaking-page__topics--mindsets">
+                                <h1><?php  echo get_post_meta($post->ID, 'speaking-topic-three-number', true); ?></h1>
+                                <h4><?php  echo get_post_meta($post->ID, 'speaking-topic-three-title', true); ?></h4>
+                                    <p>
+                                        <!-- Load the speaking text -->
+                                        <?php  echo get_post_meta($post->ID, 'speaking-topic-three-content', true); ?>
+                                    </p>
+                            </div>
+                        <?php endif; ?>
 					</div>
 
 					<div class="speaking-page__testimonials">
